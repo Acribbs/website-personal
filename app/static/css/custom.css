@@ -1,0 +1,387 @@
+
+
+body{
+	background-color: #FFF;
+  	font-family: 'Raleway', sans-serif;
+}
+
+#page {
+    margin-right: 500px;
+}
+#maincontent {
+    float: left;
+    width: 100%;
+    background-color: #F0F0F0;
+
+}
+#menurightcontent{
+    float: right;
+    width: 500px;
+    margin-right: -500px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+tr.border_bottom td {
+  border-bottom:2pt dotted grey;
+}
+
+.rainbow2 {
+    background-image: -webkit-linear-gradient(left, #E0F8F7, #585858, #ffa904); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #E0F8F7, #585858, #ffa904); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #E0F8F7, #585858, #ffa904); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, #E0F8F7, #585858, #ffa904); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, , #585858, #ffa904); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#background{
+    background-image: -webkit-linear-gradient(left, #ff1d04, #e3c6b9, #ffa904); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #ff1d04, #e3c6b9, #ffa904); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #ff1d04, #e3c6b9, #ffa904); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, #ff1d04, #e3c6b9, #ffa904); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, #ff1d04, #e3c6b9, #ffa904); /* Standard syntax; must be last */;
+background-repeat:no-repeat;
+height: 500px;
+width: 97%;
+margin-left:20px;
+}
+
+#buttons{
+    float:center;
+}
+#buttons ul{
+    list-style:none;
+    left:50%;
+text-align:center;
+font-size:50px;
+padding:20px 5px;
+}  
+
+#buttons a{
+    text-decoration:none;
+    background-image: -webkit-linear-gradient(left, #FFF, #FFF, #FFF); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #FFF, #FFF, #FFF); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #FFF, #FFF, #FFF); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, #FFF, #FFF, #FFF); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, #FFF, #FFF, #FFF); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    float:center;
+    padding:20px 20px;
+    text-align:center;
+    white-space:nowrap;
+    
+}
+#buttons li:hover a{
+    text-decoration: none;
+    font-size:60px;
+    font-family: Arial;
+    text-decoration: none;
+    color:#FFF;
+}
+
+
+.aboutme{
+height: 55em;
+width: 97%;
+margin-left:20px;
+padding:20 10px; 
+overflow: scroll;
+clear:both
+}
+#philosophy{
+height: 90%;
+width: 97%;
+margin-left:20px;
+padding:20 10px;
+}
+#history-top{
+position: relative;
+height: 1100%;
+width: 97%;
+margin-left:20px;
+padding:20 10px; 
+}
+
+#history-left{
+    text-overflow: ellipsis;
+    z-index: 0;
+    height: 1100%;
+    width: 48%;
+    float:left;
+    border:0;
+    text-align: justify;
+}
+
+#history-right{
+    z-index: 0;
+    width: 45%;
+    float:left;
+    margin-left:20px;
+    border:0;
+    height:1100%;
+    text-align: justify;
+}
+
+#random{
+
+}
+
+.clr {clear:both;}
+
+
+div.cv3-envaleur h2 {
+   width: 97%; 
+   text-align: center; 
+   border-bottom: 2px solid #000; 
+   line-height: 0.1em;
+   margin: 10 px 0 10px; 
+} 
+
+div.cv3-envaleur h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+#contact{
+	border:1px solid black;
+	width: 94%;
+	margin-left: 20px;
+}
+
+#losinfo{
+font-size:25px;
+margin: 10 px 0 10px;
+line-height: 1.5em;
+width: 50%;
+text-align: justify;
+font-style: italic;
+color: grey;
+}
+
+#profilephoto{
+width: 100%;
+display: block;
+position: absolute;
+}
+.losinfo2{
+font-size:25px;
+margin: 10 px 0 10px;
+line-height: 1.5em;
+width: 50%;
+text-align: justify;
+color: grey;
+padding:20 0px;
+}
+.losinfo3{
+font-size:25px;
+margin: 10 px 0 10px;
+line-height: 150%;
+width: 97%;
+text-align: justify;
+color: grey;
+padding:40 0px;
+}
+.losinfo4{
+font-size:15px;
+line-height: 200%;
+width: 100%;
+text-align: justify;
+color: grey;
+}
+.Scieinfo{
+font-size:15px;
+line-height: 200%;
+width: 100%;
+text-align: justify;
+color: grey;
+}
+
+div.Scieprojects h2{
+	font-size: 20px;
+	color: black;
+}
+
+div.Scieprojects p{
+	font-size: 15px;
+	color: grey;
+}
+img.center-science {
+    display: block;
+    margin: 0 auto;
+}
+
+
+#personalinfo{
+height: 600px;
+width: 97%;
+margin-left:20px;
+padding:20 10px;
+}
+
+#footer_background{
+width: 100%;
+    background-color: #F0F0F0;
+}
+
+html {
+        min-width: 960px;
+    }
+    
+.content-block {
+  background-size: cover;
+  background-position: center center;
+}
+
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+.grid-item { width: 200px; 
+
+}
+.grid-item--width2 { width: 100px; }
+
+
+.Scieprojects{
+margin-left: 20px;
+font-size:15px;
+line-height: 200%;
+width: 96%;
+text-align: justify;
+color: grey;
+}
+.Scieprojects h3{
+font-size: 15px;
+color: #2AA9E0;
+}
+.Scieprojects h4{
+font-size: 15px;
+color: #3cba54;
+}
+
+.project{
+width: 100%;
+text-overflow: ellipsis;
+z-index: 0;
+float: center;
+height: 800px;
+}
+
+#project-1{
+width: 80%;
+text-overflow: ellipsis;
+z-index: 0;
+float: center;
+height: 400px;
+margin-left: 10%;
+}
+
+#project-2{
+width: 80%;
+text-overflow: ellipsis;
+z-index: 0;
+float: center;
+height: 250px;
+
+margin-left: 10%;
+}
+#project-3{
+width: 80%;
+text-overflow: ellipsis;
+z-index: 0;
+float: center;
+height: 400px;
+margin-left: 10%;
+}
+#project-4{
+width: 80%;
+text-overflow: ellipsis;
+z-index: 0;
+float: center;
+height: 600px;
+margin-left: 10%;
+}
+#project-5{
+width: 80%;
+text-overflow: ellipsis;
+z-index: 0;
+float: center;
+height: 400px;
+margin-left: 10%;
+}
+#project-6{
+width: 80%;
+text-overflow: ellipsis;
+z-index: 0;
+float: center;
+height: 300px;
+margin-left: 10%;
+}
+
+.project-left{
+width: 40%;
+z-index: 0;
+float: left;
+margin-top: 2em;
+}
+
+.project-right{
+width: 60%;
+z-index: 0;
+float: right;
+}
+
+.single-blog {
+margin-bottom:5%;
+}
+
+.single-blog p{
+text-align: justify;
+}
+.single-blog ol{
+margin-top:5%;
+margin-bottom:5%;
+
+}
+
+
+.single-blog li{
+margin-top:1%;
+color:grey;
+text-align: justify;
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+
+<!-- blog css starts here -->

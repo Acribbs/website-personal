@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" src="/static/img/blog/sequins-2.jpg" alt=" " style="height:400px;margin-left:10%;""></a>
+					<div class=" single-grid">
+						<h4>SPLICED SYNTHETIC GENES AS INTERNAL CONTROLS IN RNA SEQUENCING EXPERIMENTS</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>March 20, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+<p>A recent(ish) publication <b style=color:black;>‘Spliced synthetic genes as internal controls in RNA sequencing experiments’</b> <a href="http://www.nature.com/nmeth/journal/v13/n9/full/nmeth.3958.html">(Nature methods, August 2016) </a>regarding external spiking controls called <b style=color:black;>‘sequins’</b> has prompted quite a lot of discussion on <a href="http://seqanswers.com/forums/showthread.php?t=70843">seqanswers </a>, the majority of the comments being positive.</p>
+
+<p>Having worked on a number of single cell sequencing projects it has become clear to me that using standard ERCC spike-in controls are really not up to the job.  The issue I have with them is that they were designed for a completely different purpose and do not represent endogenous RNA accurately (specifically length and GC content).</p>
+
+<p>ERCCs are a common set of external RNA controls that were developed by the External RNA Controls Consortium (ERCC), an ad hoc group of academic, private and public organisations hosted by the National Institute of Standards and Technology (NIST). ERCC’s were originally developed and used as hybridized probes to calibrate measurements for DNA microarray experiments. A known amount of each RNA spike-in is mixed with the experimental sample during preparation and the quantity of spike-in is used to normalise the total amount of RNA between samples.</p>
+
+<p>Their use as an accurate way to normalise RNA in microarray experiments is clear, however their use in RNA sequencing has always been a bit of an issue for me. Since ERCC’s were designed for hybridization, their sequences, particularly their GC content, is not representative of a typical human RNA. In microarray this is not typically an issue but in RNA sequencing where sequencing context is critical, the use of ERCC’s is problematic.</p>
+
+<p>However, recently a group led by Tim Mercer from the <b style=color:black;>Garvan Institute, Sydney,</b> have developed a new set of internal spike-in controls, termed ‘sequins’, that represent the full length mRNA isoforms, therefore making them more representative of the human transcriptome. Sequins have an entirely artificial sequence with no homology to natural reference genomes, but they align to gene loci encoded on an artificial in silico chromosome. In the following paper, the researchers demonstrate the use of sequins in RNA-seq experiments to measure sample-specific biases and determine the limits of reliable transcript assembly and quantification in accompanying human RNA samples.</p>
+
+<p>I believe that the use of ‘sequins’ will provide a significant advantage to those researchers using them in their experiments because they are more representative of the human transcriptome. However, I believe that there are still significant issues regarding the use of external spike-in controls in general and I now believe that the way to overcome some of these issues to use <b style=color:black;>unique molecular identifiers (UMI’s)</b>, more to follow on UMI’s in future posts…..</p>
+
+</div>						
+</div>
+</div>	
+
+	
+	
+
+
+{% endblock %}

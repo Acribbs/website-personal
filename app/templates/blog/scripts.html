@@ -1,0 +1,405 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" src="/static/img/blog/scripts.png" alt=" " style="height:400px;""></a>
+					<div class=" single-grid">
+						<h4>COMMAND LINE PARSING FOR PYTHON</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>March 26, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+						
+<p>Today I would like to introduce the concept of how to package your code into a script so its’ easily callable by using command line arguments. The process of turning python code into a script is obtained by using the argparse python <a href="https://docs.python.org/3/library/argparse.html"> module </a>. In CGAT we utilise this functionality in a collection of scripts that can be downloaded as a github repository here. We routinely write scripts in CGAT because they can be called in our pipelines and you can run multiple instances of scripts, so if you have access to a cluster you can speed up your analysis of next gen data.</p>	
+
+<p>In this post I would like to first introduce the CGAT scripts as an example of how to run a script from the command line. Next I will explain how you can write python code that can be called on the command line using the argparse module. </p>
+
+<h4>CGAT scripts as an example</h4>
+
+<p>Before you install the CGAT scripts first make sure you have installed pysam, which can be installed by running the commands in a terminal: </p>					
+<div class="highlighter-rouge"><pre class="highlight"><code> pip install pysam</code></pre></div>
+
+<p>This python module is used through out CGAT scripts to easily handle bam files.</p>
+
+<p>To download the CGAT code collection, the easiest way is to install it by typing the following commands in a terminal: </p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> pip install cgat</code></pre></div>
+
+
+<p>Alternatively, and this is my preferred way, you can clone the github repository and then run the following commands:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Git clone https://github.com/CGATOxford/cgat.git
+cd cgat
+Python setup,py develop
+Python CGAT/scripts/cgat_rebuild_extensions.py
+</code></pre></div>
+
+<p>Once the CGAT code collection is installed you may see that there are a number of other dependencies that need to be installed and you will have to do this manually. However, we are currently working on a conda environment that will support all of the CGAT dependences. This is in development, I will update this when it is available. </p>
+
+<p>The scripts are located in the scripts directory, <code>/cgat/CGAT/scripts/</code>. You can find information about the cgat scripts by running:<p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cgat --help</code></pre></div>
+<h6> Output</h6>
+<div class="highlighter-rouge" style="overflow: scroll;height: 200px;"><pre class="highlight" style="color:blue;"><code>cgat.py - Computational Genomics Analysis Tools
+===============================================
+
+:Author: Andreas Heger, CGAT
+:Release: $Id$
+:Date: |today|
+:Tags: Genomics
+
+To use a specific tool, type::
+
+    cgat "tool" [tool options] [tool arguments]
+
+Tools are grouped by keywords. For this message and a list of
+available keywords type::
+
+    cgat --help
+
+For a list of tools matching a certain keyword, type::
+
+   cgat --help "keyword"
+
+or::
+
+   cgat --help all
+
+for a list of all available tools.
+
+To get help for a specific tool, type::
+
+    cgat "tool" --help
+
+CGAT tools are grouped by keywords. The following keywords
+are defined:
+
+Genomics              Python                GenomeAlignment      
+Conversion            FASTQ                 Variants             
+Statistics            Manipulation          Power                
+MultipleAlignments    FASTA                 PSL                  
+BIGWIG                Annotation            Intervals            
+BED                   BEDGRAPH              Sequences            
+WIGGLE                Comparison            Protein              
+NGS                   GTF                   Counting             
+BAM                   Summary               GFF                  
+Transformation        Genesets              Geneset              
+CHAIN                 Fasta        </code></pre></div>
+<p>The code is labelled with a number of keywords and scripts that help perform certain tasks are grouped accordingly.</p> <p>To look at the scripts that are associated with each keyword:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cgat –-help FASTA</code></pre></div>
+
+<h6> Output</h6>
+<div class="highlighter-rouge" style="overflow: scroll;height: 200px;"><pre class="highlight" style="color:blue;"><code> ............
+Tools matching the keyword 'FASTA':
+
+bed2fasta             fasta2kmercontent     fastqs2fasta         
+diff_fasta            fasta2unique_kmers    gtf2fasta            
+fasta2bed             fasta2variants        index_fasta          
+fasta2gff             fastas2fasta  </code></pre></div>
+						
+<p>The naming convention of the script may not be necessarily obvious at first but it goes by this convention: The name of the input file is at the beginning and following the 2 is the output file. So in terms of bam2bam, it takes a bam file and outputs a bam file (after performing some task, e.g. filtering). As another example, fasta2bed converts a fasta file to a bed file (But may also perform other manipulations of the fasta file, but the output will always be a bed file). </p>	
+
+<p>Before you run a script it is always a good idea to look at the help section of the script, you can do this by running:</p>					
+<div class="highlighter-rouge"><pre class="highlight"><code>cgat gff2bed --help</code></pre></div>
+
+<h6> Output</h6>
+						
+<div class="highlighter-rouge" style="overflow: scroll;height: 400px;"><pre class="highlight" style="color:blue;"><code> cgat.py - Computational Genomics Analysis Tools
+===============================================
+
+:Author: Andreas Heger, CGAT
+:Release: $Id$
+:Date: |today|
+:Tags: Genomics
+
+To use a specific tool, type::
+
+    cgat <tool> [tool options] [tool arguments]
+
+Tools are grouped by keywords. For this message and a list of
+available keywords type::
+
+    cgat --help
+
+For a list of tools matching a certain keyword, type::
+
+   cgat --help <keyword>
+
+or::
+
+   cgat --help all
+
+for a list of all available tools.
+
+To get help for a specific tool, type::
+
+    cgat <tool> --help
+
+Tools matching the keyword 'FASTA':
+
+bed2fasta             fasta2kmercontent     fastqs2fasta         
+diff_fasta            fasta2unique_kmers    gtf2fasta            
+fasta2bed             fasta2variants        index_fasta          
+fasta2gff             fastas2fasta                               
+
+Adams-MBP-5:personal_website adamc$ cgat gff2bed --help
+Usage: gff2bed.py - convert from gff/gtf to bed
+=========================================
+
+:Author: Andreas Heger
+:Release: $Id$
+:Date: |today|
+:Tags: Genomics Intervals GFF BED Conversion
+
+Purpose
+--------
+
+This script converts GFF or GTF formatted files to BED formatted
+files.
+
+Documentation
+--------------
+
+Users can select the field from the GTF file to be used in the name
+field of the BED file using ``--set-name``. Choices include "gene_id",
+"transcript_id", "class", "family", "feature", "source", "repName"
+and "gene_biotype".
+To specify the input is in GTF format use --is-gtf.
+
+BED files can contain multiple tracks. If required, users can use the
+"feature" or "source" fields in the input GFF file to specifiy
+different tracks in the BED file (default none).
+
+Usage
+------
+
+Example::
+
+   # View input GTF file
+   head tests/gff2bed.py/mm9_ens67_geneset_100.gtf
+
+   # Convert GTF to bed format using gene_id as name and group by GTF feature
+   cat tests/gff2bed.py/mm9_ens67_geneset_100.gtf | cgat gff2bed.py --is-gtf
+--set-name=gene_id --track=feature > mm9_ens67_geneset_100_feature.bed
+
++-------------------------------------------------------+
+|track name=CDS                                         |
++------+---------+---------+--------------------+---+---+
+|chr18 |3122494  |3123412  |ENSMUSG00000091539  |0  |-  |
++------+---------+---------+--------------------+---+---+
+|chr18 |3327491  |3327535  |ENSMUSG00000063889  |0  |-  |
++------+---------+---------+--------------------+---+---+
+|chr18 |3325358  |3325476  |ENSMUSG00000063889  |0  |-  |
++------+---------+---------+--------------------+---+---+
+
+Command line options
+--------------------
+
+
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  --is-gtf              input file is in gtf format [default=False]
+  --set-name=NAME       field from the GFF/GTF file to use as the name field
+                        in the BED file [gene_id]
+  --track=TRACK         use feature/source field to define BED tracks
+                        [default=none]
+  --bed12-from-transcripts
+                        Process GTF file into Bed12 entries, with blocks as
+                        exonsand thick/thin as coding/non-coding
+
+  Script timing options:
+    --timeit=TIMEIT_FILE
+                        store timeing information in file [none].
+    --timeit-name=TIMEIT_NAME
+                        name in timing file for this class of jobs [all].
+    --timeit-header     add header for timing information [none].
+
+  Common options:
+    --random-seed=RANDOM_SEED
+                        random seed to initialize number generator with
+                        [none].
+    -v LOGLEVEL, --verbose=LOGLEVEL
+                        loglevel [1]. The higher, the more output.
+    -?                  output short help (command line options only.
+
+  Input/output options:
+    -I FILE, --stdin=FILE
+                        file to read stdin from [default = stdin].
+    -L FILE, --log=FILE
+                        file with logging information [default = stdout].
+    -E FILE, --error=FILE
+                        file with error information [default = stderr].
+    -S FILE, --stdout=FILE
+                        file where output is to go [default = stdout].						
+</code></pre></div>
+
+<p>To run a script is easy, take for example the bam2bam script that performs a number of different filter and stripping of bam files: </p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cat input.gtf | cgat gff2bed --is-gtf --set-name=gene_id > output.bed</code></pre></div>						
+						
+<p>This will output a bedfile with the gene_id as the name for each record.</p>
+
+<h4>How is the script put together?</h4>
+
+<p>Now we will go into a bit more detail on how to put a script together and how to get the command line options to interact with the python code. First, the argparse module does all of the hard work and therefore it is useful to look at the documentation <a href="https://docs.python.org/3.6/library/argparse.html">here</a>
+
+
+<h4>The parser</h4>
+
+<p>I always write a script by defining what I want as the input and output and the steps that need to be performed in order to generate the output. In the case of gff2bed the input is the gtf (or the gff) the output is the bed. For the code I want to hadle both gff and gtf for I want to specify when im using on or the other so I need to define an option <code>--is-gtf</code>. I also want to be able to set the name of each track from a given field in the gtf/gff, therefore I define a <code>--set-name</code> option.</p>
+
+<p>To begin to define the script I set up imports that I will need and the parser is defined in the main function:</p>
+
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import sys
+import itertools
+import CGAT.Experiment as E
+import CGAT.GTF as GTF
+import CGAT.Bed as Bed
+
+def main(argv=sys.argv):
+
+    parser = E.OptionParser(version="%prog version: $Id$",
+                            usage=globals()["__doc__"])</code></pre></div>	
+                            
+                            
+<p>You can see that in cgat we have a wrapper for the argparse in CGAT/Experiment.py (imported as CGAT.Experiment as E). The main reason for this is because we want to have more functionality over the code to perform such tasks as handling files and documentation in a consistent manner. However the code could easily be re-written using the standard way of defining the argparser according to the documentation:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def main(argv=sys.argv):
+
+	parser = argparse.ArgumentParser(description='Process some integers.')
+	parser.add_argument('integers', metavar='N', type=int, nargs='+',
+                    help='an integer for the accumulator')
+	parser.add_argument('--sum', dest='accumulate', action='store_const',
+                    const=sum, default=max,
+                    help='sum the integers (default: find the max)')
+
+	args = parser.parse_args()
+	print args.accumulate(args.integers)</code></pre></div>	
+
+<p>Next we need to define the options <code>--is-gtf</code> and <code>--set-name</code> (there is also <code>--track</code> and <code>--bed12-from-transcipt</code> also defined in this script but we are going to ignore them as we do not set them and they default to none). We do this in cgat by parser.add_option() and we can set defaults if nothing is set using parser.set_defaults() if no command lie arguments are detected.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	parser.add_option("--is-gtf", dest="is_gtf", action="store_true",
+                      help="input file is in gtf format [default=%default] ")
+
+	parser.add_option(
+        "--set-name", dest="name", type="choice",
+        help="field from the GFF/GTF file to use as the "
+        "name field in the BED file [%default]",
+        choices=("gene_id", "transcript_id", "class", "family",
+                 "feature", "source", "repName", "gene_biotype"))
+	parser.add_option(
+        "--track", dest="track", type="choice",
+        choices=("feature", "source", None),
+        help="use feature/source field to define BED tracks "
+        "[default=%default]")
+
+	parser.add_option(
+        "--bed12-from-transcripts", dest="bed12", action="store_true",
+        default=False,
+        help="Process GTF file into Bed12 entries, with blocks as exons"
+             "and thick/thin as coding/non-coding")
+	parser.set_defaults(
+        track=None,
+        name="gene_id",
+        is_gtf=False)</code></pre></div>
+        
+<p>Usually you would always define the input and output files in the argument parser, however in cgat this is handled separately in Experiment.py by using</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>(options, args) = E.Start(parser, argv=argv)	</code></pre></div>					
+
+<h4>The functional python code</h4>
+
+<p>In the parser you specify the dest, which allows you to pass the arguments and files into the downstream python functions.</p>
+
+<p>For gff2bed we next initialise a GFT iterator (by calling the iterator in CGAT/GTF.py) that will iterate and yield over the gtf/gff file.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>iterator = GTF.iterator(options.stdin)</code></pre></div>	
+
+<p>The next bit of python code controls what happens to the processing of the gtf/gff, this depends on whether a track function was specified (Since we did not specify a track we can ignore the first if statement since it is defaulted to none and look at the else statement.) </p>
+
+
+<div class="highlighter-rouge"><pre class="highlight"><code>   if options.track:
+        all_input = list(iterator)
+
+        if options.track == "feature":
+            grouper = lambda x: x.feature
+        elif options.track == "source":
+            grouper = lambda x: x.source
+
+        all_input.sort(key=grouper)
+
+        bed = Bed.Bed()
+        for key, vals in itertools.groupby(all_input, grouper):
+            options.stdout.write("track name=%s\n" % key)
+            for gff in vals:
+                ninput += 1
+
+                if options.bed12:
+                    bed = transcript2bed12(gff)
+                else:
+                    bed.fromGTF(gff, name=options.name)
+
+                options.stdout.write(str(bed) + "\n")
+                noutput += 1
+
+   else:
+        bed = Bed.Bed()
+        for gff in iterator:
+            ninput += 1
+
+            if options.bed12:
+                bed = transcript2bed12(gff)
+            else:
+                bed.fromGTF(gff, name=options.name)
+
+            options.stdout.write(str(bed) + "\n")
+
+            noutput += 1</code></pre></div>
+            
+            
+<p>The code initiates a class Bed() in CGAT/Bed.py that contains methods for working with Bed formatted files. Next, a for loop is initialised that iterates over the GTF file. For each read if the bed12 option is set (we didn’t set it so it defaults to none) the transcript2bed12() function is called. However because this was not set, the else statement is run and fromGTF() of the Bed class is called. This fills the fields of a GTF entry into a bed entry, which is then passed to standard out. </p>
+
+<p>At the bottom of the script the main function is called:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>if __name__ == "__main__":
+    sys.exit(main(sys.argv))</code></pre></div>
+    
+<p>This completes the script and you now know how to write a script that can be called using command line arguments.</p>
+
+
+
+						</div>						
+											</div>
+
+				</div>	
+
+	
+	
+
+
+{% endblock %}

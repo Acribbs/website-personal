@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" src="/static/img/blog/ipython-top.png" alt=" " style="height:100px;""></a>
+					<div class=" single-grid">
+						<h4>IPYTHON NOTEBOOK</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>March 21, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+<p>This is the first tutorial I have for my blog and I plan on going through the basics of ipython notebook because I have found the ability to run snippets of code very useful for writing and testing code.</p>
+
+<p>IPython notebook can easily be installed using the following:</p>
+
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install "ipython[notebook]"</code></pre></div>
+
+<p>However, I would recommend using conda for installation because it allows you to easily manage your python environment using a few simple commands. A conda environment can be installed by following the instructions <a href="https://conda.io/docs/install/quick.html">here</a>.</p>
+
+<p>To find whether ipython is currently installed on conda environment</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Conda list</code></pre></div>
+
+<p>If it isn’t then search conda for ipython then install it:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Conda search ipython
+Conda install ipython</code></pre></div>
+
+<p>Once you have installed ipython then it is as simple as change directory into the desired folder you want to create notebooks in then run the command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>ipython notebook </code></pre></div>
+
+<p>You should see the following information during the startup:<p>
+
+<img src="/static/img/blog/ipython-3.png">
+<p>A browser should open with the opening iptyhon notebook page. If this does not happen then direct your browser to http://localhost:8888/.</p>
+
+<img src="/static/img/blog/ipython-1.png">
+<p>To create a new ipython notebook click new in the top right hand corner and select a python environment and a new window should open with an empty cell.</p>
+
+<img src="/static/img/blog/ipython-2.png">
+<p>Each IPython notebook consists of cells that can contain either a heading, Markdown or python code.</p>
+
+<img src="/static/img/blog/ipython-4.png">
+
+<p>When you have written some code you can press <code>shift-Enter</code> to execute the code. This will generate an output cell displayed beneath the input cell. For example running the first code cell will generate an output like this:</p>
+
+<img src="/static/img/blog/ipython-5.png">
+<p>Global variables can be shared between cells and executing the following will give the output:</p>
+
+<img src="/static/img/blog/ipython-6.png">
+<p>Convention dictates that the cells are ran from top to bottom, this can produce unintended consequences if you run cells out of sync because of the inheritance of global variables. Be aware of this issue and try and write code that uses unique variable names and try to avoid inheritance as much as possible throughout the notebook.</p>
+
+<p>After you have finished writing your code save it and you can return to it at a later date. </p>
+
+<img src="/static/img/blog/ipython-7.png">
+
+<p>This is just a quick introduction to using ipython notebook, for more information on setting up an environment for ipython and more on R magic please click <a href="/ipython_notebook2">here</a> for my other post of more advanced features.
+
+
+</div>
+</div>						
+											</div>
+
+				</div>	
+
+	
+	
+
+
+{% endblock %}
