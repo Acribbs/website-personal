@@ -47,6 +47,28 @@ width: 97%;
 margin-left:20px;
 }
 
+#things{
+	float:center;
+}
+
+#things ul{
+	float:center;
+    list-style:none;
+    left:50%;
+text-align:center;
+font-size:0px;
+padding:20px 5px;
+
+}
+#things li{
+    text-decoration: none;
+    font-size:20px;
+    font-family: Arial;
+    text-decoration: none;
+    color:#FFF;
+    margin: 15px 1em;
+}
+
 #buttons{
     float:center;
 }
@@ -80,6 +102,38 @@ padding:20px 5px;
     font-family: Arial;
     text-decoration: none;
     color:#FFF;
+}
+
+
+.contact{
+height: 55em;
+width: 97%;
+margin-left:20px;
+padding:20 10px; 
+overflow: scroll;
+clear:both
+}
+
+.mrc-work{
+width:20%;
+margin-right:10em;
+float: right;
+}
+.mrc-work img{
+	margin-left: 2em;
+	margin-right: auto;
+	display: inline-block;
+}
+
+.mrc-work p{
+padding-top:1em;
+font-size:15px;
+margin: 10 px 0 10px;
+line-height: 1.5em;
+width: 100%;
+text-align: justify;
+font-style: italic;
+color: grey;
 }
 
 
@@ -143,12 +197,6 @@ div.cv3-envaleur h2 {
 div.cv3-envaleur h2 span { 
     background:#fff; 
     padding:0 10px; 
-}
-
-#contact{
-	border:1px solid black;
-	width: 94%;
-	margin-left: 20px;
 }
 
 #losinfo{
@@ -384,4 +432,10 @@ text-align: justify;
    }
 }
 
+
+#map {
+        height: 550px;
+        width: 100%;
+        float:center;
+       }
 <!-- blog css starts here -->

@@ -3,11 +3,11 @@ from flask import render_template, flash, redirect, session,\
 	send_file, make_response
 from flask_login import LoginManager, UserMixin, login_user, logout_user,\
     current_user
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import Form
 from wtforms import StringField, widgets, SelectMultipleField, SelectField, RadioField
 from wtforms.validators import DataRequired, Length, Optional
-from sqlalchemy import *
+#from sqlalchemy import *
 from sqlalchemy.orm import Session
 from app import app, Models
 from oauth import OAuthSignIn
@@ -20,10 +20,13 @@ import csv
 
 # initialise a login manager and SQLAlchemy database
 lm = LoginManager(app)
-db = SQLAlchemy(app)
 
-engine = create_engine('sqlite:///csvdb')
-session = Session(bind=engine)
+# not suing sqlite but may do in the future
+#db = SQLAlchemy(app)
+
+# Not using sqlite at the moment but for comments I may use them in the future
+#engine = create_engine('sqlite:///csvdb')
+#session = Session(bind=engine)
 
 
 

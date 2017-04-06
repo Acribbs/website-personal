@@ -1,35 +1,51 @@
 {% extends "base.html" %}
 {% block home %}
+<div class="contact">
+<div class="cv3-envaleur">
+<h2 style="text-align:center;font-family:Helvetica; font-color:black;"><span>Current place of work</span></h2><br />
 
-<p style="margin-left: 20px; margin-right: 400px;">I am currently a Computational Genomics and Training (CGAT) Fellow based in the MRC computational centre in the Witherall
-institute of Molecular Medicine (WIMM), University of Oxford</p>
- 
-<div id="contact">
-<h2 style="margin-left:20px">Current place of work</h2>
 <a href="https://cgatoxford.wordpress.com" target="_blank">
-  	<img src="/static/img/cgat_banner.png" style="margin-left: 20px">
+  	<img src="/static/img/cgat_banner.png" style="margin-left: 10em">
   	</a><br><br>
-<p style="margin-left: 20px;">CGAT is an MRC funded programme within the MRC Functional Genomics Unit to train 
-	future leaders in computational genomics</p>
-	<a href="https://www.mrc.ac.uk/skills-careers/additional-career-support/computational-genomics-analysis-cgat/" target="_blank">
-  	<img src="/static/img/mrc_logo.png" style="margin-left:20px;width:130px;height:50px;">
-  	</a>
-	<p style="margin-left: 20px"><b>Computational and Genomics Centre (CGAT):</b><br> 
-	<a class="external-link" target="_blank" href="http://www.dpag.ox.ac.uk/research/mrcfgu">MRC Functional Genomics Unit</a><br>
-	<a class="external-link" target="_blank" href="http://www.dpag.ox.ac.uk">Department of Physiology Anatomy & Genetics</a><br>
+
+	<div id="">
+		<div class="mrc-work">
+		<img src="/static/img/mrc_logo.png"/>
+		<p>CGAT is an MRC funded programme with the remit to train the future leaders in computational genomics</p>
+		</div>
+<p style="margin-left: 20px"><b>Computational and Genomics Centre (CGAT):</b><br> 
+	<a class="external-link" target="MRC Centre for Computational Biology" href="https://www.imm.ox.ac.uk/mrc-computation-centre">MRC Centre for Computational Biology</a><br>
+	<a class="external-link" target="WIMM" href="http://www.imm.ox.ac.uk/home">MRC Weatherall Institute of Molecular Medicine</a><br>
 	University of Oxford<br>
-	South Parks Road<br>
+	John Radcliffe Hospital<br>
+	Headington<br>
 	OXFORD<br>
-	OX1 3PT<br>
-	<br/>
-	<p style="margin-left: 20px"><a class="external-link" href="http://www.ox.ac.uk/visitors/maps-and-directions">Directions</a> and link to <a class="external-link" href="https://goo.gl/maps/fHYqv">Google Maps</a>.</p>
-	<br/>
-	<p style="margin-left: 20px">Enquiries: 01865 282168<br>
-	Email:<span class="link-mailto"><a class="mail-link" href="mailto:cgat@dpag.ox.ac.uk">cgat@imm.ox.ac.uk</a></span></p></p>
+	OX3 9DS <br><br/><br/><br/>
+
+<h1>Where to find the WIMM</h1>
+
+<div id="map">
+{% with %}
+
+    {% set location=(51.763279, -1.216744) %}
+    {% set style="width:500px;height:500px;"%}
+
+    {{
+    googlemap(
+        "simple-map",
+        location.0, location.1,
+        markers=[location,],
+        style=style
+        )
+    }}
+
+{% endwith %}
+</div>
+</div>
 </div>
 
 
-<div id="contact">
-</div>
+
+
 
 {% endblock %}

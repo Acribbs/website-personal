@@ -1,6 +1,7 @@
 #Default Config
 
 class BaseConfig(object):
+	MAP_API_KEY = "AIzaSyBKZ8HTbkOmKT2oaJ_8p8djs02C4OlF44I"
 	DEBUG = False
 	WTF_CSRF_ENABLED = True
 	SECRET_KEY = 'z\xa4\xff\x95\x97\x80\x97Z,7\xcc\x92F\x04\xb6\xe9T~\xfb\x92jT\xe8\x05'
@@ -26,3 +27,5 @@ class DevelopmentConfig(BaseConfig):
 	
 class ProductionConfig(BaseConfig):
 	DEBUG = False
+
+#current_app.config['OAUTH_CREDENTIALS']
