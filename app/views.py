@@ -126,6 +126,11 @@ def Github():
 @app.route('/language')
 def Language():
     return render_template('blog/language.html')    
+
+@app.route('/ipython-config')
+def IpythonConfig():
+    return render_template('blog/ipython-config.html')  
+    
     
 # Method of the month
 @app.route('/Method-1')
