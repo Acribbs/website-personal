@@ -65,12 +65,12 @@ def load_user(id):
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('Home.html')
     
 
 @app.route('/home')
 def index():
-    return render_template('home.html')
+    return render_template('Home.html')
     
 
 @app.route('/Science')
