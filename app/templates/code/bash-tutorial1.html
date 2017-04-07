@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" src="/static/img/code/shell_script.png" alt=" " style="height:400px;margin-left:20%;""></a>
+					<div class=" single-grid">
+						<h4>BASH/SHELL SCRIPTING</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>April 7, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+<p>It's always been a difficult task trying to find good resources to understand bash scripting. 
+Although bash scripts are very useful and are critical for running parallelised tasks in a 
+high performance cluster (HPC), I have always struggled finding resources that are in-depth enough to 
+understand some of the advanced functionality that you can gain with bash/shell scripting.</p>
+
+<p>Unlike python and R, where there are fantastic online tutorials, the main resource that seems to be 
+useful is youtube. Specifically, two main resources: </p>
+
+<h3>1. Derek Banas</h3>
+
+<p>The link to the tutorial can be found <a href="https://www.youtube.com/watch?v=hwrnmQumtPw&t=3009s">here</a>. 
+I like this tutorial because its only 1 hour, has accompanying code that can be saved to your desktop and used as
+a reference, plus is really easy to follow!</p>
+
+<img src="/static/img/code/DerekBanas.png" alt="DerekBanas" style="height:50%;width:50%">
+
+
+<h3>2. The Bad Tutorials</h3>
+
+<p>The link to the tutorial can be found <a href="https://www.youtube.com/watch?v=nVt3Rst-2H8&list=PL7B7FA4E693D8E790">here</a>.
+This is a 62 part tutorial and goes into some of the more advanced functionality of shell scripting. I really like this tutorial
+ because it's easy to follow and you can pick and choose the clips you are most interested in as they are 
+ labelled well.</p>
+ 
+<img src="/static/img/code/BadTutorial.png" alt="The Bad tutorials" style="height:50%;width:50%">
+
+</div>						
+</div>
+</div>	
+
+	
+	
+
+
+{% endblock %}

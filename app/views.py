@@ -127,9 +127,7 @@ def Github():
 def Language():
     return render_template('blog/language.html')    
 
-@app.route('/ipython-config')
-def IpythonConfig():
-    return render_template('blog/ipython-config.html')  
+
     
     
 # Method of the month
@@ -137,6 +135,18 @@ def IpythonConfig():
 def MethodOne():
     return render_template('blog/Method-1.html')
     
+    
+    
+# Featured code tutorial
+
+@app.route('/bash-tutorial1')
+def BashOne():
+    return render_template('code/bash-tutorial1.html')
+
+
+
+
+
 #Flask login route - This may be enabled in the future for blog posting comments - but at the moment
 #the code can be disabled
 
