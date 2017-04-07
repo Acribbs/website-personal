@@ -143,7 +143,12 @@ def MethodOne():
 def BashOne():
     return render_template('code/bash-tutorial1.html')
 
-
+@app.route('/softlink')
+def Softlink():
+    return render_template('code/Softlink+files.html')
+@app.route('/softlink1')
+def Softlink1():
+    return render_template('code/Softlink.html')
 
 
 
