@@ -150,7 +150,13 @@ def Softlink():
 def Softlink1():
     return render_template('code/Softlink.html')
 
+@app.route('/ensembl')
+def Ensembl():
+	return render_template('code/ensembl.html')
 
+@app.route('/ensembl1')
+def Ensembl1():
+	return render_template('code/Ensemble_to_gene_symbol.html')
 
 #Flask login route - This may be enabled in the future for blog posting comments - but at the moment
 #the code can be disabled

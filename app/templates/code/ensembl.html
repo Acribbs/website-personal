@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" alt="Chain" src="/static/img/code/Ensembl.png" alt=" " style="height:400px;margin-left:20%;"></a>
+					<div class=" single-grid">
+						<h4>CONVERT ENSEMBL GENE ID TO GENE SYMBOL</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>April 9, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+<p>The following notebook contains code for converting an ensembl gene id to a gene symbol. The code has both <b style=color:black;>python and R </b>implementations.</p>
+
+<iframe src="/ensembl1" style="height:1000px;width:100%;margin-top:10px;"></iframe>
+
+</div>						
+</div>
+</div>	
+
+	
+	
+
+
+{% endblock %}
