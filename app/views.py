@@ -158,6 +158,14 @@ def Ensembl():
 def Ensembl1():
 	return render_template('code/Ensemble_to_gene_symbol.html')
 
+
+
+
+@app.after_request
+def add_header(response):
+    response.cache_control.max_age = 300
+    return response
+
 #Flask login route - This may be enabled in the future for blog posting comments - but at the moment
 #the code can be disabled
 
