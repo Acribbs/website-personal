@@ -439,3 +439,9 @@ text-align: justify;
         float:center;
        }
 <!-- blog css starts here -->
+
+.ribbon {
+   position: relative;
+   top: -16px;
+   right: -706px;
+}
