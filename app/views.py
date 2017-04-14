@@ -166,6 +166,9 @@ def add_header(response):
     response.cache_control.max_age = 300
     return response
 
+@app.route('/google0daab0556399ff0b.html')
+def Google():
+    return render_template('google0daab0556399ff0b.html') 
 #Flask login route - This may be enabled in the future for blog posting comments - but at the moment
 #the code can be disabled
 
