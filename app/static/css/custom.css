@@ -212,7 +212,7 @@ color: grey;
 #profilephoto{
 width: 100%;
 display: block;
-position: absolute;
+position: relative;
 }
 .losinfo2{
 font-size:25px;
