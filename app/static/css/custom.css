@@ -213,6 +213,8 @@ color: grey;
 width: 100%;
 display: block;
 position: relative;
+max-width: 100%;
+min-width: 300px;
 }
 .losinfo2{
 font-size:25px;
