@@ -1,9 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://www.acribbs.co.uk/</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/Contact</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/Code</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/Blog</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/home</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/Science</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/language</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/gittutorial</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/python-pandas</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/github</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/softlink1</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/ipython_notebook</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/ensembl</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/scripts</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/python-start</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/ipython_notebook2</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/Method-1</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/bash-tutorial1</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/ensembl1</loc>
+  </url>
+  <url>
+    <loc>http://www.acribbs.co.uk/softlink</loc>
+  </url>
 </urlset>
+<!--<guid value="0ab5d658-586b-4b42-8457-30a92d329604" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

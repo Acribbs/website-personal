@@ -170,7 +170,7 @@ def add_header(response):
 def Google():
     return render_template('google0daab0556399ff0b.html') 
     
-@app.route('/sitemap')
+@app.route('/sitemap.xml')
 def Sitemap():
     return render_template('sitemap.xml') 
     
