@@ -134,7 +134,10 @@ def Language():
 @app.route('/Method-1')
 def MethodOne():
     return render_template('blog/Method-1.html')
-    
+
+@app.route('/Method-2')
+def MethodTwo():
+    return render_template('blog/Method-April17.html')
     
     
 # Featured code tutorial
