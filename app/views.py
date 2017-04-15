@@ -176,7 +176,12 @@ def Google():
 @app.route('/sitemap.xml')
 def Sitemap():
     return render_template('sitemap.xml') 
-    
+
+@app.route('/BingSiteAuth.xml')
+def Sitemap():
+    return render_template('BingSiteAuth.xml') 
+
+
 #Flask login route - This may be enabled in the future for blog posting comments - but at the moment
 #the code can be disabled
 
