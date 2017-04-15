@@ -178,7 +178,7 @@ def Sitemap():
     return render_template('sitemap.xml') 
 
 @app.route('/BingSiteAuth.xml')
-def Sitemap():
+def Sitemap2():
     return render_template('BingSiteAuth.xml') 
 
 
