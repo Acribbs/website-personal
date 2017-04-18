@@ -127,6 +127,10 @@ def Github():
 def Language():
     return render_template('blog/language.html')    
 
+@app.route('/Computational_biology-to-not')
+def Compdonot():
+    return render_template('blog/Computational_biology-to-not.html') 
+
 
     
     

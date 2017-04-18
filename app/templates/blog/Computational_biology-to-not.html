@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Blogology</title>
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" src="/static/img/blog/screen.png" alt=" " style="height:400px;margin-left:15em;width:700px;""></a>
+					<div class=" single-grid">
+						<h4>REASONS FOR AND AGAINST BEING A COMPUTATIONAL BIOLOGIST</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>April 18, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+
+<p>‘Computational biology’ is a very broad term to describe <b style=color:black;>several roles that apply computation to biology</b>, including data analysis, statistician, bioinformatician, and software developer (plus many more). Whatever your career stage, I personally think its important to have an understanding of basic computational biology to help analyse and interpret your results, however deciding whether to commit yourself to learning more advanced skills can be a difficult task. In the following post I try to summarise the best and the worst reasons for committing yourself.</p>
+
+<p>Being accepted to train as an MRC fellow in computational biology has completely <b style=color:black;>revolutionised the way I approach science</b>. It has given me new skills that have made the analysis of complex data possible. I get lots of questions from people asking me whether they should do a masters or further learning in computational biology. My response is to question them about their motivation, and generally (but not exclusively) their motivation is to get out of the wet lab because their career has stalled, this is not a reason for becoming a computational biologist and I will discuss the reasons below.</p>
+
+<p>There is a lot of fan fair in biology at the moment regarding bioinformatics as the way to achieve great things, in both scientific output and career opportunities. I have to agree with this sentiment, but it <b style=color:black;>isn’t going to make you a super productive or better scientist</b>. Computational biology is one tool in a scientist’s toolkit and needs to be used in conjunction with many other techniques to explore the underlying biology. Before you begin your computational journey you need to ask yourself one question…. <b style=color:black;>“Will my scientific work benefit from the application of computational biology?”</b>. If the answer is no then I wouldn’t recommend devoting your time to learning something that will not reflect well on your scientific career. For example, if learning how to perform a new laboratory technique will benefit you more then do that. </p>
+
+<p>My motivation for wanting to become a computational biologist was because I felt my science and hence my career was stalling because I was generating next generation sequencing data but was unable to analyse it. If your main aim in becoming a computational biologist is to leave the wet lab, then leaving academic science and working in consultancy, medical writing or patents may be a better career move. Ultimately as a biologist, unless you are highly proficient at statistics and can develop useful algorithms that will be widely used in the scientific community, <b style=color:black;>computational biology should be used to complement your skills</b> as a wet lab scientist. </p>
+
+<p>Below I give some of the main reasons for and against devoting your time (and a lot of your free time) to the pursuit of data analysis:</p>
+
+<h3>Reasons to:</h3>
+<ul style="margin-left:5em">
+	<li><b style=color:black;>You will have more research flexibility</b></li>
+	<ul style="margin-left:10em">
+		<li>Being able to perform big analysis has given me the confidence not to shy away from tackling more complex scientific problems. I now have the confidence to difficult analysis comes my way.</li>
+	</ul>
+	<li><b style=color:black;>Being able to work anywhere at anytime (This is also a reason not to)</b></li>
+	<ul style="margin-left:10em">
+		<li>The great thing about being a computational biologist is that as long as you have an Internet connection you can work anywhere. This can sometimes mean working from home is a lot easier.</li>
+	</ul>
+	<li><b style=color:black;>Gaining a more general perspective on your work</b></li>
+	<ul style="margin-left:10em">
+		<li>Before I joined as an MRC fellow I found reading technical papers outside of my field very challenging because I wasn’t used to the terminology. I also found it hard to conceptualise the experiments because I wasn’t aware of the technical aspects of experiments that generate big data (such as next generation sequencing experiments). Moreover, I had little understanding of the statistical and mathematical modelling approaches used in many studies. However, after 2 years of education in computational biology I have a much better grasp of these things because the learning process makes you think in general terms about how experiments should be planned, performed and analysed, in both a practical and statistical perspective.</li>
+	</ul>
+	<li><b style=color:black;>Transferable skills</b></li>
+	<ul style="margin-left:10em">
+		<li>The skills learned in computational biology are extremely transferable in pretty much all walks of life. Having programming skills can get you a job in IT/web development/software development, while being able to analyse big data and perform machine learning/statistics can get you a job in pretty much all walks of life, from pharmaceutical to Argos (I chose this as an example because I recently saw a fantastic job advert for machine learning in predicting shopping habits, I was very tempted because it was applying the latest machine learning to a very complex problem)</li>
+	</ul>
+</ul>
+
+<h3>Reasons not to:</h3>
+<ul style="margin-left:5em">
+	<li><b style=color:black;>It may not be worth the effort</b></li>
+	<ul style="margin-left:10em">
+		<li>The feeling of having ownership over data is something that every scientist likes to have. However, if you are able to set up good collaborations with computational groups then investing time into having the expertise in your group may not be worth it.</li>
+	</ul>
+	<li><b style=color:black;>Being able to work anywhere at anytime</b></li>
+	<ul style="margin-left:10em">
+		<li>I find data analysis addictive and therefore can sometimes become consuming, being able to work anywhere can leave you will the feeling that the boundaries between work and play are very hazy.</li>
+	</ul>
+	<li><b style=color:black;>Learning bioinformatics will not make you a better scientist</b></li>
+	<ul style="margin-left:10em">
+		<li>Unless you have a real pressing need to analyse big data or perform computational biology as part of your scientific work, investing time into learning a new skill can be a wasteful task. Computational biology is just another tool, just like a centrifuge, that allows you to move towards answering a scientific question. Like computational biology, if your experiment does not need a centrifuge then learning how to use one is a wasteful task.</li>
+	</ul>
+</ul>
+
+<p>Ultimately, computational biology may not benefit everyone and there are both positives and negatives reasons for embarking on a career in this field. However, I do think that a basic ability to analyse and plot data in R (it seems like R is the programming language of choice for wet lab scientists) is a necessity in all areas of biology these days. </p>
+
+</div>						
+											</div>
+
+				</div>	
+</div>
+	</div>
+	
+
+
+{% endblock %}
