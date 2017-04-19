@@ -419,19 +419,28 @@ margin-bottom:5%;
 .single-blog ul{
 margin-left:5em;
 font-size: 15px;
+width:100%;
 }
 .single-blog li{
 margin-top:1%;
 color:grey;
 text-align: justify;
-}
-
-#ul-indent{
-margin-left:10em;
+width;50%;
 }
 
 
 
+.blog-bullet-point{
+margin-bottom:5%;
+width:100%;
+}
+
+.blog-bullet-point li{
+margin-top:1%;
+color:grey;
+text-align: justify;
+width:50%;
+}
 
 img-responsive{
 position: absolute;
@@ -470,6 +479,7 @@ font-size: 20px;
 .single-blog ul{
 margin-left:5em;
 font-size: 20px;
+width:100%;
 }
 .single-blog li{
 margin-top:1%;
@@ -500,6 +510,7 @@ font-size: 20px;
 .single-blog ul{
 margin-left:5em;
 font-size: 20px;
+width:100%;
 }
 .single-blog li{
 margin-top:1%;
