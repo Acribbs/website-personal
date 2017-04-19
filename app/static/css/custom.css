@@ -448,3 +448,8 @@ text-align: justify;
    top: -16px;
    right: -706px;
 }
+
+
+@-ms-viewport{
+  width: device-width;
+}
