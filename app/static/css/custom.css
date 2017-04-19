@@ -433,6 +433,7 @@ body{
 .single-blog {
 margin-bottom:5%;
 width:100%;
+font-size: 20px;
 }
 .single-blog p{
 text-align: justify;
@@ -458,11 +459,12 @@ body{
 .single-blog {
 margin-bottom:5%;
 width:100%;
+font-size: 20px;
 }
 .single-blog p{
 text-align: justify;
 width:100%;
-font-size: 20px;
+
 }
 .single-blog li{
 margin-top:1%;
