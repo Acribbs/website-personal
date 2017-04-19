@@ -445,13 +445,6 @@ width:50%;
 
 
 
-.single-top{
-text-align:center;
-width:100%;
-}
-
-
-
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
 body{
