@@ -435,6 +435,14 @@ width:100%;
 .single-blog p{
 text-align: justify;
 width:480px;
+font-size: 14px;
+}
+.single-blog li{
+margin-top:1%;
+color:grey;
+text-align: justify;
+width:480px;
+font-size: 14px;
 }
 }
 @media only screen and (max-width : 650px) and (min-width : 481px) {
@@ -451,6 +459,14 @@ width:100%;
 .single-blog p{
 text-align: justify;
 width:100%;
+font-size: 14px;
+}
+.single-blog li{
+margin-top:1%;
+color:grey;
+text-align: justify;
+width:480px;
+font-size: 14px;
 }
 }
 
