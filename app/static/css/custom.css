@@ -403,10 +403,12 @@ float: right;
 .single-blog {
 margin-bottom:5%;
 width:100%;
+
 }
 
 .single-blog p{
 text-align: justify;
+font-size: 15px;
 }
 .single-blog ol{
 margin-top:5%;
