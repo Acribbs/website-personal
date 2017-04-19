@@ -442,18 +442,13 @@ text-align: justify;
 width:50%;
 }
 
-img-responsive{
-position: absolute;
-margin: auto;
-left: 0; 
-right: 0;
-top: 0;
-bottom: 0; 
+
+
+
+.single-top{
+text-align:center;
+width:100%;
 }
-
-
-
-
 
 
 
@@ -486,6 +481,9 @@ margin-top:1%;
 color:grey;
 text-align: justify;
 width:480px;
+}
+.img-responsive{
+width:20%;
 }
 }
 @media only screen and (max-width : 650px) and (min-width : 481px) {
