@@ -131,6 +131,9 @@ def Language():
 def Compdonot():
     return render_template('blog/Computational_biology-to-not.html') 
 
+@app.route('/Statistics-1')
+def Statistics():
+    return render_template('blog/Statistics-1.html')
 
     
     
