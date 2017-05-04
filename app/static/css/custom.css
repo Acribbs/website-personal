@@ -480,9 +480,7 @@ color:grey;
 text-align: justify;
 width:480px;
 }
-.img-responsive{
-width:50%;
-}
+
 }
 @media only screen and (max-width : 650px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
