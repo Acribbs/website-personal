@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="" href="/static/css/custom.css"/>
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" src="/static/img/blog/github-banner.png" alt=" " style="height:400px;""></a>
+					<div class=" single-grid">
+						<h4>GIT - HOW TO ATTACH A DETACHED HEAD</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>March 29, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+
+<p>I love git as a version control system. I find it easy to use and integration with github makes it a great way to share and contibute to code projects</p>
+
+<p>However, I encountered a problem recently that I hadn't seen before (see the title), some of you may be aware of how to fix this, some of you not. It certainly took me a while to solve so i will share with you the problem and how to overcome it.</p>
+
+<p>My problem was caused when <b style=color:black;>I wanted to revert back to a previous commit</b>, look at that commit, and then revert back to the HEAD. I will use an example to demonstrate:</p>
+ 
+<p>I first ran the command: <div class="highlighter-rouge"><pre class="highlight"><code>git log</code></pre></div></p>
+
+<div class="blog-img"><img src="/static/img/blog/detach_HEAD/HEAD-1.png"></div>
+
+<p>Then I reverted back to a previous commit</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout 0927d59326e225b408c89c11c6f7479bff04ac77</code></pre></div>
+
+<img src="/static/img/blog/detach_HEAD/HEAD-2.png">
+
+<p>You can clearly see now that the <b style=color:black;>HEAD is at 0927d59</b>. What I wanted to do now was simple, move back to the HEAD</p>
+
+<p>I tried the following without success:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout 0927d59</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout HEAD</code></pre></div>
+
+<p>I was completely stuck, however after about 20 mins of trying any and all commands, <b style=color:black;>it should have been obvious</b>. I ran:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout master</code></pre></div>
+
+<p>This reset the HEAD back to the master and I was clear to continue working on the code.</p>
+						</div>						
+											</div>
+
+				</div>	
+
+	
+	
+
+
+{% endblock %}

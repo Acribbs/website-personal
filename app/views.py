@@ -135,6 +135,10 @@ def Compdonot():
 def Statistics():
     return render_template('blog/Statistics-1.html')
 
+@app.route('/git-HEAD')
+def gitHead():
+    return render_template('blog/git-HEAD.html')
+
     
     
 # Method of the month
