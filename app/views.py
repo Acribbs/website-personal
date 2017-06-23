@@ -139,7 +139,9 @@ def Statistics():
 def gitHead():
     return render_template('blog/git-HEAD.html')
 
-    
+@app.route('/Public1')
+def Public1():
+    return render_template('blog/Public1.html')  
     
 # Method of the month
 @app.route('/Method-1')

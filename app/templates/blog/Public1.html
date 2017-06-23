@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="" href="/static/css/custom.css"/>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" src="/static/img/blog/Our_team[1].jpg" alt=" " style="height:300px;margin-left:20em;""></a>
+					<div class=" single-grid">
+						<h4>MY FIRST PUBLIC ENGAGEMENT EXPERIENCE</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>April 25, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+
+<p>I have always been interested in how the general public perceives science, particularly in the political climate of "we are sick of experts"</p>
+
+<p>Therefore when the institute I work at was asking for volunteers for the <b style=color:black;>MRC festival "Science in a supermarket"</b>, I snapped at the chance to get involved. I signed up for a Sunday in High Wycombe, currently my home town. We had
+all planned for a very typical British summer, so hoodies rather than t-shirts were ordered for us so we could keep warm. However, hoodies it turned out, were a very bad idea as three days
+prior to the event there was a heatwave predicted. On the morning of the event I had thought that we may get away with the heat as it was overcast and quite mild, however as the clouds began to lift, the heat began to swell, and so did our faces.</p>
+
+<p>As you can see in the picture we all looked quite respectable at 10am in the morning, however it wasn't long before the stand became busy and the hoodies came off. Our main aim of the day was to engage with the public and talk about some of the research we
+are conducting at the WIMM in Oxford. To aid us in communicating with the public we had free rulers, pens and shopping bags to give away. Plus we had two really well designed activities, one in which we had normal 3D printed red blood cells and various diseased
+red blood cells and the second was a perfectly designed model of the skin, complete with an inner layer of white blood cells.</p>
+
+<p>I had many preconceptions about how the general public views science before taking part. For example, I thought that most of the passing public would not be interested and it would only attract "free loaders" looking for a free pen and ruler. However,
+im actually really pleased to say that there was lots of interest, particularly from children (A lot of the time children would want to visit but were pulled back by their parents, theres nothing better than encouraging your children's interests eh).</p>
+
+<p>One thing that really surprised me was the intelligence of some of the kids that came up to talk to us. Most knew the concept of a gene, how mRNA and protein is produced, and how this relates to disease. This is something that I dont think I had at their age
+and it gives me real hope that the schools in High Wycombe are teaching their kids well. Unfortunately this is something that a lot of the adults really couldn't understand, maybe because they were never taught it at school or just arnt interested in 
+reading about it as adults. </p>
+
+<p>Overall, the event was a great success and we managed to talk to nearly two hundred people at our little stall. More importantly I now have a new found respect for how bright our young generation are. If we are to continue to advance as a country then we need
+more people engaged in science and I think events like this really help. </p>
+
+
+</div>
+</div>						
+											</div>
+
+				</div>	
+
+	
+	
+
+
+{% endblock %}
+
+
+
