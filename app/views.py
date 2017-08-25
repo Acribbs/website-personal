@@ -152,7 +152,11 @@ def MethodOne():
 def MethodTwo():
     return render_template('blog/Method-April17.html')
     
+@app.route('/UW_ML')
+def UW_ML():
+    return render_template('blog/UW_ML.html')
     
+
 # Featured code tutorial
 
 @app.route('/bash-tutorial1')
@@ -173,6 +177,10 @@ def Ensembl():
 @app.route('/ensembl1')
 def Ensembl1():
 	return render_template('code/Ensemble_to_gene_symbol.html')
+
+@app.route('/hex')
+def Hex():
+	return render_template('code/Hex-code.html')
 
 
 
