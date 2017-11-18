@@ -156,7 +156,9 @@ def MethodTwo():
 def UW_ML():
     return render_template('blog/UW_ML.html')
     
-
+@app.route('/Gglogo')
+def Gglogo():
+    return render_template('blog/gglogo.html')
 # Featured code tutorial
 
 @app.route('/bash-tutorial1')

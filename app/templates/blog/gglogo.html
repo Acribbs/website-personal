@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="" href="/static/css/custom.css"/>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img src="/static/img/blog/gglogo.png" alt=" " style="height:70%; width:70%;margin-left:1%;"></a>
+					<div class=" single-grid">
+						<h4>GGSEQLOGO TO PLOT PUBLICATION READY SEQUENCE LOGOS</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>Nov 18, 2017</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+<p> I recently came across the paper "ggseqlogo: a versatile R package for drawing sequence logos" published
+in <a href="https://academic.oup.com/bioinformatics/article-abstract/33/22/3645/3980251?redirectedFrom=fulltext">Bioinformatics</a> and thought it perfectly explains my reason for moving away from pythons matplotlib in favour of R's
+ggplot2.</p>
+
+<p> The final and most crucial part of the scientific process is generating figures for publications. When I first began my 
+career as a computational biologist I always struggled with deciding upon the best methods for generating publication
+ready figures.</p>
+
+<p>I was always torn between generating figures using python's matplotlib and seaborn libraries and R's ggplot2. 
+I began using Matplotlib and seaborn because they offer great flexibility in generating publication quality figures and they
+integrate very well with pandas data frames, making the whole data analysis more streamlined without having to make intermediate tables
+and data frames. However, more recently I have chosen to move away from these libraries in favour of R's ggplot2. </p>
+
+<p>My main reason for this is because it can take quite a lot of time think and write code to make a matplotlib figure, this
+is particularly apparent when you want to make simple less-bespoke plots. I found that using ggplot2 to construct plots
+was so much more simpler and intuitive and provided a great advantage when creating simple small plots. </p>
+
+<p>Another advantage is that ggplot2 is very versatile and can easily be extended to increase plotting functionality. Hence,
+my reason for discussing <b style=color:black;>ggplotlogo</b>. ggplotlogo extends the base ggplot package and can create
+some very high quality plots that can be directly used for publication quality figures. Another nice thing about
+the package is that it is very nicely explained and <a href="https://omarwagih.github.io/ggseqlogo/">documented.</a></p>
+
+<p>Im using this paper and its associated cpde as a good example of how ggplot2 can be extended and I look forward to
+making some of my own ggplot2 extensions in the future.</p>
+
+
+
+</div>						
+</div>
+</div>	
+
+	
+	
+
+
+{% endblock %}
