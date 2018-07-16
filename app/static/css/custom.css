@@ -269,6 +269,7 @@ height: 600px;
 width: 97%;
 margin-left:20px;
 padding:20 10px;
+overflow:hidden;
 }
 
 #footer_background{
