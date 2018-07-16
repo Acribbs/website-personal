@@ -12,11 +12,24 @@
 	OXFORD<br>
 	OX3 7LD <br><br/><br/><br/>
 
-<h1>Where to find the Botnar</h1>
+<h1>Where to find the WIMM</h1>
 
 <div id="map">
-<iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJ9wy-4_BdkgRrgeN9nA27ik&key=..." allowfullscreen></iframe>
+{% with %}
+
+    {% set location=(51.763279, -1.216744) %}
+    {% set style="width:500px;height:500px;"%}
+
+    {{
+    googlemap(
+        "simple-map",
+        location.0, location.1,
+        markers=[location,],
+        style=style
+        )
+    }}
+
+{% endwith %}
 </div>
 </div>
 </div>
