@@ -138,7 +138,7 @@ color: grey;
 
 
 .aboutme{
-height: 55em;
+height: 32em;
 width: 97%;
 margin-left:20px;
 padding:20 10px; 
@@ -217,13 +217,11 @@ max-width: 100%;
 min-width: 300px;
 }
 .losinfo2{
-font-size:25px;
-margin: 10 px 0 10px;
-line-height: 1.5em;
+font-size:15px;
 width: 50%;
 text-align: justify;
 color: grey;
-padding:20 0px;
+line-height: 1.5em;
 }
 .losinfo3{
 font-size:25px;
@@ -238,6 +236,7 @@ padding:40 0px;
 font-size:15px;
 line-height: 200%;
 width: 100%;
+line-height: 1.5em;
 text-align: justify;
 color: grey;
 }
@@ -265,10 +264,9 @@ img.center-science {
 
 
 #personalinfo{
-height: 700px;
+height: 350px;
 width: 97%;
-margin-left:20px;
-padding:20 10px;
+margin-left:10px;
 overflow:hidden;
 }
 
