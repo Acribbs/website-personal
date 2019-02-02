@@ -340,7 +340,6 @@ width: 80%;
 overflow: auto;
 z-index: 0;
 float: center;
-height: 450px;
 margin-left: 10%;
 }
 
@@ -349,7 +348,6 @@ width: 80%;
 overflow: auto;
 z-index: 0;
 float: center;
-height: 250px;
 
 margin-left: 10%;
 }
@@ -358,7 +356,6 @@ width: 80%;
 overflow: auto;
 z-index: 0;
 float: center;
-height: 400px;
 margin-left: 10%;
 }
 #project-4{
@@ -366,7 +363,6 @@ width: 80%;
 overflow: auto;
 z-index: 0;
 float: center;
-height: 600px;
 margin-left: 10%;
 }
 #project-5{
@@ -374,7 +370,6 @@ width: 80%;
 overflow: auto;
 z-index: 0;
 float: center;
-height: 400px;
 margin-left: 10%;
 }
 #project-6{
