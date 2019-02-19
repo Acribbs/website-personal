@@ -6,7 +6,7 @@ cffi==1.9.1
 click==6.7
 coverage==4.3.4
 decorator==4.0.11
-Flask==0.12
+Flask==0.12.3
 Flask-Babel==0.11.1
 Flask-Bcrypt==0.7.1
 Flask-Login==0.4.0
@@ -29,7 +29,7 @@ pyparsing==2.2.0
 python-openid==2.2.5
 pytz==2016.10
 rauth==0.7.3
-requests==2.13.0
+requests==2.20.0
 six==1.10.0
 SQLAlchemy==1.1.6
 sqlalchemy-migrate==0.11.0
