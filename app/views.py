@@ -136,7 +136,9 @@ def Ensembl1():
 def Hex():
 	return render_template('code/Hex-code.html')
 
-
+@app.route('/rmarkdown')
+def Rmarkdown():
+	return render_template('code/Rmarkdown_tips0.html')
 
 
 @app.after_request
