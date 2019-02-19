@@ -1,67 +1,19 @@
 from flask import render_template, flash, redirect, session,\
 	url_for, request, g, request, Response, stream_with_context, request, Flask, \
 	send_file, make_response
-from flask_login import LoginManager, UserMixin, login_user, logout_user,\
-    current_user
 #from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import Form
 from wtforms import StringField, widgets, SelectMultipleField, SelectField, RadioField
 from wtforms.validators import DataRequired, Length, Optional
-#from sqlalchemy import *
-from sqlalchemy.orm import Session
-from app import app, Models
-from oauth import OAuthSignIn
-from Models import bcrypt
+from app import app
 import os
 import re
-import StringIO
+from io import StringIO
 import csv
 
-
-# initialise a login manager and SQLAlchemy database
-lm = LoginManager(app)
-
-# not suing sqlite but may do in the future
-#db = SQLAlchemy(app)
-
-# Not using sqlite at the moment but for comments I may use them in the future
-#engine = create_engine('sqlite:///csvdb')
-#session = Session(bind=engine)
-
-
-
-#Login manager
-
-login_manager = LoginManager()
-login_manager.init_app(app)
-login_manager.login_view = 'login'
-	
 		
 #Views and routes start here
 
-from Models import User, csvdb, User2
-
-
-#Facebook/Twitter user loader - This may be used in the future for blog comments
-
-'''
-@login_manager.user_loader
-def load_user(id):
-	if hasrun == True:
-		global hasrun
-		hasrun = False
-		return User2.query.get(int(id))
-	else:
-		return User.query.get(int(id))
-@lm.user_loader
-def load_user(id):
-	if hasrun == True:
-		global hasrun
-		hasrun = False
-		return User2.query.get(int(id))
-	else:
-		return User.query.get(int(id))
-'''
 ########################
 
 # route start here
