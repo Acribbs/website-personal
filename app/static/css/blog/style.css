@@ -34,7 +34,7 @@ body a:hover{
 .banner-top-code{
 	border: 1px solid #190608;
 	background:url(/static/img/technology-1283624_1920.jpg) no-repeat;
-	min-height:400px;
+	min-height:50%;
 	background-size: 1200px;
 	border-radius: 50px;
 	background-position:center;
@@ -54,7 +54,7 @@ body a:hover{
 }
 .banner-text-code {
 	position: relative;
-	top: 4em;
+	top: 5%;
 	left: 23em;
 	width: 40%;
 	padding: 1em 0px;
@@ -118,8 +118,15 @@ body a:hover{
 	margin:10px 0 0 0;
 	color:#3d1a1b;
 }
+
+.about-two-main{
+	margin-left 28%;
+}
+
 .about-two{
 	margin-top:3%;
+	width: 60%;
+	margin-left 20%;
 }
 .about-two img{
 	width:100%;
