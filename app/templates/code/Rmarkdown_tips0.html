@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block home %}
+
+<head>
+<title>Computational Anatomy Blog</title>
+<link href="/static/css/blog/style.css" rel="stylesheet">
+<link href="/static/css/blog/bootstrap.css" rel="stylesheet" media="screen">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="" href="/static/css/custom.css"/>
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/static/js/blog/move-top.js"></script>
+<script type="text/javascript" src="/static/js/blog/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+	<div class="single">
+		<div class="container">
+				<div class="single-top">
+						<a href="#"><img class="img-responsive" alt="Chain" src="/static/img/code/chain-016.jpg" alt=" " style="height:200px;margin-left:20%;"></a>
+					<div class=" single-grid">
+						<h4>Rmarkdown Tips</h4>				
+							<ul class="blog-ic">
+								<li><a href="#"><span> <i  class="glyphicon glyphicon-user"> </i>Adam Cribbs</span> </a> </li>
+		  						 <li><span><i class="glyphicon glyphicon-time"> </i>February 19, 2019</span></li>	
+		  						 <!-- Need to change the icons to font awsome ones -->	  						 	
+		  					</ul>
+<div class="single-blog">	  						
+
+<p>I use <a href="https://rmarkdown.rstudio.com">Rmarkdown</a> almost every day and have been 
+an intense user for the past 2 years.</p>
+
+<p>I primarily use Rmarkdown to build and share next-generation sequencing reports for collaborators
+or analysis code to my students or postdocs in the group. Having made many errors and written lots of
+inefficient R code I would like to share some of my Rmarkdown tips that have helped me in the past</p> 
+
+
+<h3>Tip1: Use R projects</h3>
+
+<p>If you use Rstudio to write your Rmarkdown code then setting projects is super useful way organising your code. If you work on many different
+projects then it can be a pain to set working directories and organise your data in a way that makes it easy to change
+between projects easily.</p>
+
+<p>To set up an R project its as easy as selecting <b>File</b> , <b>New Project...</b> then to switch between
+projects you can use the top right projects tab and switch easily</p>
+
+<h3>Tip2: Set global options for all code chunks</h3>
+
+<p>Copy and pasting options for every chunk can be incredibly annoying and time wasting. Its better
+to set the code options in the first chunk. This can be useful when writing sequencing analysis reports
+for both non-computationally minded people, where code is distracting, and computational people, where
+code is useful. For example, the <code>echo=TRUE/FALSE</code> can easily modify whether code will be displayed
+or not when knitting. Addint this option for all of your code chunks can be time consuming. Thankfully, there
+is a better way - you can specify <code>knitr::set_opts(echo=TRUE/FALSE)</code> and it will apply that option
+to all chunks. For example:
+
+<pre>
+	<code>
+		```{r setup, include=FALSE}
+		knitr::opts_chunk$set(echo=TRUE)
+		```
+	</code>
+</pre>
+
+<h3>Tip3: Name all of your code chunks</h3>
+
+<p>You can name all code chunks, which can be quite time consuming when you have a huge Rmarkdown document,
+particularly since each code chunk needs to have a unique name.</p>
+<pre>
+	<code>
+		```{r name_of_code_chunk}
+		some code here
+		```
+	</code>
+</pre>
+
+<p>However, there are some quite clear advantages to naming. For example, 1. It really helps with debugging,
+as the code chunk can be easily identified by the name. 2. If
+you have cacheing activated then there isn't a slowdown. 3. It makes your code documentation easier to understand
+as you can give informative titles that can be used to remind you of what you did. </p>
+
+</div>						
+</div>
+</div>	
+
+	
+	
+
+
+{% endblock %}
+
+
+
+
+
+
