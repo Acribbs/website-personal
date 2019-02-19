@@ -57,7 +57,7 @@ projects you can use the top right projects tab and switch easily</p>
 to set the code options in the first chunk. This can be useful when writing sequencing analysis reports
 for both non-computationally minded people, where code is distracting, and computational people, where
 code is useful. For example, the <code>echo=TRUE/FALSE</code> can easily modify whether code will be displayed
-or not when knitting. Addint this option for all of your code chunks can be time consuming. Thankfully, there
+or not when knitting. Adding this option for all of your code chunks can be time consuming. Thankfully, there
 is a better way - you can specify <code>knitr::set_opts(echo=TRUE/FALSE)</code> and it will apply that option
 to all chunks. For example:
 
@@ -85,6 +85,20 @@ particularly since each code chunk needs to have a unique name.</p>
 as the code chunk can be easily identified by the name. 2. If
 you have cacheing activated then there isn't a slowdown. 3. It makes your code documentation easier to understand
 as you can give informative titles that can be used to remind you of what you did. </p>
+
+
+<h4><b>Tip4: Reduce the knit time</h4></b>
+
+<p>If you set <code>cache=TRUE</code> in your chunk options or in the <code>knitr::opts_chunk$set()</code>, R
+will cache your output (save the data) so they wont be run every time you knit your Rmarkdown. This is very
+handy if you have a piece of code that you dont want to run every time, particularly if it takes a long time to run.
+If you do change something in your code then R will realise and then re-run the code chunk.
+
+However, this tip can also be confusing and annoying at times because it can sometimes lead to unexpected behaviour
+and unusual errors that can be difficult to trace. As a work around, I would only set <code>cache=TRUE</code>
+when you have finished writing your code. Always check the output following the final knitting and make sure that
+the output is what you expect.
+</p>
 
 </div>						
 </div>
