@@ -138,11 +138,11 @@ color: grey;
 
 
 .aboutme{
-height: 32em;
+height: 100%;
 width: 97%;
 margin-left:20px;
 padding:20 10px; 
-overflow: scroll;
+overflow: hidden;
 clear:both
 }
 #philosophy{
@@ -264,7 +264,7 @@ img.center-science {
 
 
 #personalinfo{
-height: 350px;
+height: auto;
 width: 97%;
 margin-left:10px;
 overflow:hidden;
