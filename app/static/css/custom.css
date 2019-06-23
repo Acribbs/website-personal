@@ -309,6 +309,19 @@ html {
 }
 .grid-item--width2 { width: 100px; }
 
+.Newsprojects{
+margin-left: 20px;
+font-size:15px;
+line-height: 200%;
+width: 96%;
+text-align: justify;
+color: grey;
+}
+
+img.center-news {
+    display: block;
+    margin: 0 auto;
+}
 
 .Scieprojects{
 margin-left: 20px;
@@ -392,6 +405,20 @@ margin-top: 2em;
 width: 60%;
 z-index: 0;
 float: right;
+}
+
+.news-left{
+width: 100%;
+z-index: 0;
+float: left;
+margin-top: 2em;
+}
+
+.news-center{
+width: 90%;
+z-index: 0;
+float: center;
+margin-top: 2em;
 }
 
 .single-blog {

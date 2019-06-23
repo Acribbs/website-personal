@@ -31,6 +31,10 @@ def index():
 @app.route('/Science')
 def Publications():
 	return render_template('Science.html')
+	
+@app.route('/news')
+def News():
+	return render_template('News.html')
 
 @app.route('/Code')
 def Example_code():
@@ -139,6 +143,10 @@ def Hex():
 @app.route('/rmarkdown')
 def Rmarkdown():
 	return render_template('code/Rmarkdown_tips0.html')
+
+@app.route('/cgat-core1')
+def Cgatcore1():
+	return render_template('code/cgat-core-1.html')
 
 
 @app.after_request
