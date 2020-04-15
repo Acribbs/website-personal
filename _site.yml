@@ -1,0 +1,36 @@
+name: Adam P Cribbs
+navbar:
+  title: Adam P Cribbs
+  type: inverse
+  left:
+  - text: Home
+    href: index.html
+  - text: About
+    icon: fa-user
+    href: about.html
+  - text: 'Science'
+    href: science.html
+  - text: 'Lab News'
+    href: labnews.html
+  - text: 'People'
+    href:
+  - text: 'Contact'
+    href: contact.html
+  - text: 'Code'
+    href:
+  right:
+  - icon: fa-envelope-o
+    href: mailto:adam.cribbs@dnorms.ox.ac.uk
+  - icon: fa-github
+    href: https://github.com/Acribbs
+  - icon: fa-twitter
+    href: https://twitter.com/CribbsP
+  - icon: fa-globe-europe
+    href: https://www.ndorms.ox.ac.uk/team/adam-cribbs
+output:
+  html_document:
+    theme: readable
+    highlight: textmate
+    lib_dir: site_libs
+    self_contained: no
+output_dir: docs
