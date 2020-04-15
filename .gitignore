@@ -1,3 +1,4 @@
 *.py[cdo]
 *._*.css
 *_*
+.Rproj.user
