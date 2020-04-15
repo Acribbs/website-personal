@@ -1,0 +1,207 @@
+---
+output: html_document
+---
+
+<link href="static/css/custom.css" rel="stylesheet" >
+
+![](static/img/science.png)
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/metabolism.jpg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2> Metabolism of T helper cells</h2>
+<h3>Prof Udo Oppermann and Prof Marc Feldmann</h3>
+<h4>Botnar Research Centre, University of Oxford</h4>
+<p> In this project I have been investigating how inhibiting specific epigenetic pathways can lead 
+to altered metabolic programming.</p>
+
+</div>
+</div>
+
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/maxresdefault.jpg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2> Hypoxia and brest cancer</h2>
+<h3>Prof Adrian Harris </h3>
+<h4>Weatherall Institute of Molecular Medicine, University of Oxford</h4>
+<p> I am leading the computational analysis of single-cell data to identify breast cancer 
+responses to hypoxia.</p>
+
+</div>
+</div>
+
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/bayer.png" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2>Research Alliance on Women's Health</h2>
+<h3>Oxford Bayer Healthcare Collaborative</h3>
+<h4>Weatherall Institute of Molecular Medicine, University of Oxford</h4>
+<p> Leading the integration of multi-omic data to identify drug targets for uterine fibroids and PCOS.</p>
+
+</div>
+</div>
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/medulloblastoma.jpg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2>Understanding the epigenetic mechanisms of chemotherapy resistance in medulloblastoma</h2>
+<h3>Dr. Tuğba Bağcı Önder</h3>
+<h4>Koç University School of Medicine, Turkey</h4>
+<p> Recently, Tugba and I were awarded a Royal Society Advanced Newton award to identify
+epigenetic drug targets for the reversal of chemotherapy resistance in medulloblastoma.</p>
+
+</div>
+</div>
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/F2large.jpg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2> Multi-omic approach to identify new biomarkers in preeclampsia patients  </h2>
+<h3>Dr Manu Vatish</h3>
+<h4>Nuffield Department of Obstetrics and Gynaecology, University of Oxford</h4>
+<p> I am working in collaboration with Prof Ian Sargent and Dr Manu Vatish at the University of Oxford (Gynaecology). We are using proteomics and transcriptomics to identify biomarkers that could be useful in the diagnostic of preeclampsia. Our focus is directed towards investigating the role of extracellular vesicles, which are secreted in large volumes during preeclampsia. Extracellular vesicles persist in the plasma of patients for extended periods, which makes them an attractive biomarker. The data have revealed a number of proteins, mRNA and miRNA species that are differentially expressed between the placenta tissue and placental derived extracellular vesicles in normal and preeclampsia patients. The next phase of the project is to validate these potential biomarkers in a large number of patients. I plan to employ machine-learning approaches to develop a diagnostic tool for accurately assessing patient disease development, ultimately leading to better treatment outcomes. </p>
+
+</div>
+</div>
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/nri3384-f3.jpg" style="width:60%;height:60%;">
+</div>
+
+<div class="project-right">
+
+<h2> Single cell analysis of gamma delta T cells within salmonella infected patients </h2>
+<h3>Prof Alison Simmons</h3>
+<h4>WIMM, University of Oxford</h4>
+<p> This project is a collaboration with Prof Alison Simmons, University of Oxford (WIMM), using single cell transcriptomic approaches to identify T cell heterogeneity following salmonella infection in healthy individuals. This project has allowed me to apply multiple statistical approaches to model T cell heterogeneity using a combination of both Frequentist and Bayesian statistical approaches.</p>
+
+</div>
+</div>
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/Dupuytren.jpg" style="width:60%;height:60%;">
+</div>
+
+<div class="project-right">
+
+<h2> Investigating BET bromodomains in Dupytren’s disease </h2>
+<h3>Dr Fiona McCann and Dr Lynn Williams</h3>
+<h4>Kennedy Institute of Rheumatology, University of oxford</h4>
+<p> I am working in collaboration with Dr Lynn Williams and Dr Fiona McCann at the Kennedy Institute of Rheumatology to analyse transcriptome data from patients with Dupytren’s disease.</p>
+
+</div>
+</div>
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/AS.jpeg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2>Epigenetics of CD4 T cells in ankylosing spondylitis</h2>
+<h3>Dr Liye Chen and Prof Paul Bowness</h3>
+<h4>Botnar Research Centre, University of Oxford</h4>
+<p>In this collaboration I am leading the computational analysis of a number of projects focused on 
+the epigenetics of T cells in the autoimmune disease AS.</p>
+</div>
+</div>
+<br /><br />
+<div class="cv3-envaleur">
+<h2 style="text-align:center;font-family:Helvetica; font-color:black;font-size: 35px;"><span>Past projects</span></h2><br />
+</div>
+
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/NKcells.jpg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right" >
+<h2> Understanding the epigenetic pathways involved in Natural killer cell activation</h2>
+<h3> Prof Udo Oppermann and Prof Sir Marc Feldmann</h3>
+<h4>Botnar Research Centre, University of Oxford</h4>
+<p> In this project I undertook the wet-lab and computational work that led to identification of
+a number of epigenetic pathways that control inflammatory function. This project was initiated during my postdoctoral work in the Oppermann and 
+Feldmann laboratories. </p>
+
+<p>This work was published as <a href="https://www.ncbi.nlm.nih.gov/pubmed/29301935">Inhibition of histone H3K27 demethylases selectively 
+modulates inflammatory phenotypes of natural killer cells.</a></p>
+
+</div>
+</div>
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/nri1713-f2.jpg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2> B cell development in autoimmunity </h2>
+<h3>Prof Richard  Cornall and Dr Consuelo Anzilotti</h3>
+<h4>WIMM, University of Oxford</h4>
+<p> I led the computational analysis of the transcriptome data of a novel B cell development 
+autoimmune disease.</p>
+
+<p> This work was published as <a href="https://www.imm.ox.ac.uk/publications/950562">An essential role for the Zn2+ transporter ZIP7 in B cell development </a></p>
+
+</div>
+</div>
+
+
+
+<div id="project-3">
+
+<div class="project-left">
+<img src="static/img/1200x900f.jpg" style="width:70%;height:70%;border-radius: 5px">
+</div>
+
+<div class="project-right">
+
+<h2> Designing CRISPR Cas gRNA across splice junctions in the human genome</h2>
+<h3>Dr Daniel Ebner and Dr Andrew Bassett</h3>
+<h4>Target Drug Discovery Institute, University of Oxford</h4>
+<p>This was the first coding project that I was involved with during my training at CGAT. I established a computational infrastructure and website to identify and rank the effectiveness of designing gRNAs to splice regions in proteins across the genome. 
+Although successful, this project didn't lead to a publication because a rival published before us, however it did allow me to develop my skills in SQL and website development.</p>
+
+</div>
+</div>
+
+
+</div>
+</div>

@@ -1,0 +1,11 @@
+---
+output: html_document
+---
+
+![](static/img/news.jpg)
+
+<div class="cv3-envaleur">
+<h2 style="text-align:center;font-family:Helvetica; font-color:black;"><span>Lab News</span></h2><br />
+</div>
+<div class="Newsprojects">
+

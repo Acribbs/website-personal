@@ -1,0 +1,45 @@
+---
+output: html_document
+---
+<link href="static/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="static/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="static/css/bootstrap-social.css" rel="stylesheet">
+<link href="static/css/font-awesome.css" rel="stylesheet" >
+<link href="static/css/custom.css" rel="stylesheet" >
+
+<ul class="nav navbar-nav navbar-right" style="margin-left: 200px;">
+  	<a href="https://twitter.com/CribbsP"><img src="static/img/Twitter_Logo_White_On_Blue.jpg" alt="Twitter" style="width:20%;height:auto;border:2%">
+  	</a>
+  	<a href="https://github.com/CGATOxford/cgat"><img src="static/img/Octocat.jpg" alt="CGAT" style="width:20%;height:auto;border:2%">
+    </a>
+	<a href="http://www.cgat.org/cgat/About/about-cgat/cgat-fellows"><img src="static/img/cgat_logo.png" alt="CGAT Fellows" style="width:20%;height:auto;border:2%">
+  	</a>
+  	<a href="https://cgatoxford.wordpress.com"><img src="static/img/wordpress-logo-32-blue.png" alt="Wordpress-cgat" style="width:20%;height:auto;border:2%">
+  	</a>
+  	</ul><br />
+  	
+<div class="aboutme">
+<div class="cv3-envaleur">
+<h2 style="text-align:center;font-family:Helvetica; font-color:black;"><span>Introduction</span></h2><br />
+
+![](static/img/water.jpg){width=100%}
+
+<div class=intro>
+I lead a computational biology team with a broad interest in systems biology, immunology
+and epigenetics. 
+
+My group is also heavily focused on developing novel multiplexed singlecell
+technology. Using this technology, our goal is to understand how cellular heterogeneity
+encodes epigenetic function and regulation in complex biological systems.
+I am responsible for leading a number of computational single-cell projects, of which the
+[Tendon Seed Network](https://chanzuckerberg.com/science/programs-resources/humancellatlas/seednetworks/the-tendon-seed-network/), part of the Human Cell Atlas (HCA), is the largest. The aim of the
+Tendon Seed Network is to develop clinical, biological and computational single-cell
+sequencing workflows to investigate the cell composition of tendon. Specifically, using
+spatial transcriptomics, imaging and single-cell nuclear RNA-seq we are building the worlds
+first map of the healthy Human tendon. This project is one of only two HCA initiatives
+established within the University of Oxford, and the only UK based Chan Zuckerberg
+Initiative (CZI) funded scheme.
+
+
+</div>
+</div>
