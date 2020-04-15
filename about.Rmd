@@ -1,5 +1,8 @@
 ---
+title: "About"
 output: html_document
+header-includes:
+   \AtBeginDocument{\let\maketitle\relax}
 ---
 <link href="static/css/bootstrap.css" rel="stylesheet" media="screen">
 <link href="static/css/bootstrap-responsive.min.css" rel="stylesheet">

@@ -1,5 +1,8 @@
 ---
+title: "Science"
 output: html_document
+header-includes:
+   \AtBeginDocument{\let\maketitle\relax}
 ---
 
 <link href="static/css/custom.css" rel="stylesheet" >

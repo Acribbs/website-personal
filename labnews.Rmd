@@ -1,5 +1,8 @@
 ---
+title: "News"
 output: html_document
+header-includes:
+   \AtBeginDocument{\let\maketitle\relax}
 ---
 
 ![](static/img/news.jpg)
