@@ -1,5 +1,4 @@
 ---
-title: "Contact"
 output: html_document
 header-includes:
    \AtBeginDocument{\let\maketitle\relax}
