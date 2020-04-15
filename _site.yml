@@ -31,6 +31,6 @@ output:
   html_document:
     theme: readable
     highlight: textmate
-    lib_dir: site_libs
+    lib_dir: [site_libs, static]
     self_contained: no
 output_dir: docs
