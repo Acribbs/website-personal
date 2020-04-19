@@ -6,7 +6,6 @@ navbar:
   - text: Home
     href: index.html
   - text: About
-    icon: fa-user
     href: about.html
   - text: 'Science'
     href: science.html
