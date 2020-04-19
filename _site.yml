@@ -12,8 +12,8 @@ navbar:
     href: science.html
   - text: 'Lab News'
     href: labnews.html
-  - text: 'People'
-    href:
+  - text: 'Publications'
+    href: publications.html
   - text: 'Contact'
     href: contact.html
   - text: 'Code'
