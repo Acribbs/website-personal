@@ -3,21 +3,21 @@ output: html_document
 header-includes:
    \AtBeginDocument{\let\maketitle\relax}
 ---
+<link href="static/css/custom.css" rel="stylesheet" >
 
-<div class="cv3-envaleur">
 <h2 style="text-align:center;font-family:Helvetica; font-color:black;"><span>Publications</span></h2><br />
-</div>
-<div class="Newsprojects">
-
-Preprints
 
 
-# *2020*
 
-* Histone H3K27me3 demethylases regulate human Th17 cell development and effector functions by impacting on metabolism. Adam P Cribbs, Stefan Terlecki-Zaniewicz, Martin Philpott, Jeroen Baardman, David Ahern, Morten Lindow, Susanna Obad, Henrik Oerum, Brant Sampey, Palwinder K Mander, Henry Penn, Paul Wordsworth, Paul Bowness, Menno de Winther, Rab K Prinjha, Marc Feldmann and Udo Oppermann. [PNAS](https://pubmed.ncbi.nlm.nih.gov/32123118/)
-* An ontogenetic switch drives the positive and negative selection of B cells. Xijin Xu, Mukta Deobagkar-Lele, Katherine R Bull, Tanya L: Cockford, Adam J Mead, Adam P Cribbs, David Sims, Consuelo Anzilotti and Richard Cornall. [PNAS](https://pubmed.ncbi.nlm.nih.gov/32019891/)
-* Mass cytometry analysis reveals a distinct immune environment in peritoneal fluid in endometriosis: a characterisation study. Guo M, Bafligil C, Tapmeier T, Manek S, Shang C, Martinez F, Schmidt N, Obendorf M, Hess-Stumpp H, Zollner T, Kennedy S, Becker C, Zondervan K, Cribbs AP* and Oppermann U. [BMC Medicine](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1470-y)
+# **2020**
 
-# *2019*
+* **Histone H3K27me3 demethylases regulate human Th17 cell development and effector functions by impacting on metabolism.** Adam P Cribbs, Stefan Terlecki-Zaniewicz, Martin Philpott, Jeroen Baardman, David Ahern, Morten Lindow, Susanna Obad, Henrik Oerum, Brant Sampey, Palwinder K Mander, Henry Penn, Paul Wordsworth, Paul Bowness, Menno de Winther, Rab K Prinjha, Marc Feldmann and Udo Oppermann. [PNAS](https://pubmed.ncbi.nlm.nih.gov/32123118/)
+* **An ontogenetic switch drives the positive and negative selection of B cells.** Xijin Xu, Mukta Deobagkar-Lele, Katherine R Bull, Tanya L: Cockford, Adam J Mead, Adam P Cribbs, David Sims, Consuelo Anzilotti and Richard Cornall. [PNAS](https://pubmed.ncbi.nlm.nih.gov/32019891/)
+* **Mass cytometry analysis reveals a distinct immune environment in peritoneal fluid in endometriosis: a characterisation study.** Guo M, Bafligil C, Tapmeier T, Manek S, Shang C, Martinez F, Schmidt N, Obendorf M, Hess-Stumpp H, Zollner T, Kennedy S, Becker C, Zondervan K, Cribbs AP* and Oppermann U. [BMC Medicine](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1470-y)
 
-* A Chemical Probe for Tudor Domain Protein Spindlin1 to Investigate Chromatin Function. Vincent Fagan, Catrine Johansson, Carina Gileadi, Octovia Monteiro, James E Dunford, Reshma Nibhani, Martin Philpott, Jessica Malzahn, Graham Wells, Ruth Faram, Adam P C ribbs, Nadia Halidi, Fengling Li, Irene Chau, Holger Greschnik, Sirkannathasan Velupillai, Adellah Allali-Hassani, James Bennett, Thomas Christott, Charline Giroud, Andrew Lewis, Kilian V M Huber, Nick Athanasou, Chas Bountra, Manfred Jung, Roland Schule, Masoud Vedadi, Cheryl Arrowsmith, Yan Xiong, Jian Jin, Oleg Fedorov, Gillian Farnie, Paul E Brennan and Udo Oppermann. [J Med Chem](https://pubmed.ncbi.nlm.nih.gov/31550156/)
+# **2019**
+
+* **A Chemical Probe for Tudor Domain Protein Spindlin1 to Investigate Chromatin Function.** Vincent Fagan, Catrine Johansson, Carina Gileadi, Octovia Monteiro, James E Dunford, Reshma Nibhani, Martin Philpott, Jessica Malzahn, Graham Wells, Ruth Faram, Adam P C ribbs, Nadia Halidi, Fengling Li, Irene Chau, Holger Greschnik, Sirkannathasan Velupillai, Adellah Allali-Hassani, James Bennett, Thomas Christott, Charline Giroud, Andrew Lewis, Kilian V M Huber, Nick Athanasou, Chas Bountra, Manfred Jung, Roland Schule, Masoud Vedadi, Cheryl Arrowsmith, Yan Xiong, Jian Jin, Oleg Fedorov, Gillian Farnie, Paul E Brennan and Udo Oppermann. [J Med Chem](https://pubmed.ncbi.nlm.nih.gov/31550156/)
+* **Maternal circulating syncytiotrophoblast-derived extracellular vesicles contain biologically active 5’-tRNA halves** William R Cooke, Adam P Cribbs, Wei Zhang, Neva Kandzija, Carolina Motta-Mejia, Eszter Dombi, Rannya Ria Ana, Sofia Cerdeira, Christopher Redman and Manu Vatish. [Biochem Biophys Res Commun](https://pubmed.ncbi.nlm.nih.gov/31405560/)
+* **CGAT-core, a python framework for building scalable, reproducible computational biology workflows.** Adam P. Cribbs, Sebastian Luna-Valero, Charlotte George, Ian M. Sudbery,
+Antonio J. Berlanga-Taylor, Stephen N. Sansom, Tom Smith, Nicholas E. Ilott, Jethro Johnson, Jakub Scaber, Katherine Brown, David Sims, Andreas Heger. [F1000 Research](https://f1000research.com/articles/8-377)
