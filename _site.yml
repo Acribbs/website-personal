@@ -46,6 +46,7 @@ navbar:
     href: https://twitter.com/CribbsP
   - icon: fa-globe-europe
     href: https://www.ndorms.ox.ac.uk/team/adam-cribbs
+
 output:
   html_document:
     theme: readable
