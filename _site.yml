@@ -16,7 +16,27 @@ navbar:
   - text: 'Contact'
     href: contact.html
   - text: 'Code'
-    href:
+    menu:
+    - text: 'siteymlgen'
+      icon: fa-archive
+      desc: Dynamically generate _site.yml file
+      href: https://acribbs.github.io/siteymlgen/index.html
+    - text: 'scflow'
+      icon: fa-archive
+      desc: Single-cell pipelines
+      href: http://single-cell.readthedocs.io
+    - text: 'tRNAnalysis'
+      icon: fa-archive
+      desc: tRNA Analysis workflows
+      href: https://github.com/Acribbs/tRNAnalysis
+    - text: 'cgat-developers'
+      icon: fa-archive
+      desc: Tools to assist NGS analysis
+      href: https://github.com/cgat-developers
+    - text: 'Deseq2 report'
+      icon: fa-archive
+      desc: Deseq2 report generator
+      href: https://github.com/Acribbs/deseq2_report
   right:
   - icon: fa-envelope-o
     href: mailto:adam.cribbs@dnorms.ox.ac.uk
