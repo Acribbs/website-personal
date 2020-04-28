@@ -5,16 +5,22 @@ navbar:
   type: inverse
   left:
   - text: Home
+    desc: Home page
     href: index.html
   - text: About
+    desc: About page
     href: about.html
   - text: 'Science'
+    desc: Science
     href: science.html
   - text: 'Lab News'
+    desc: Lan news
     href: labnews.html
   - text: 'Publications'
+    desc: Publications
     href: publications.html
   - text: 'Contact'
+    desc: Contact
     href: contact.html
   - text: 'Code'
     menu:
