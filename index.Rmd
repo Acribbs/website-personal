@@ -9,6 +9,16 @@ header-includes:
 <link href="static/css/bootstrap-social.css" rel="stylesheet">
 <link href="static/css/font-awesome.css" rel="stylesheet" >
 <link href="static/css/custom.css" rel="stylesheet" >
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97452190-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <ul class="nav navbar-nav navbar-right" style="margin-left: 200px;">
   	<a href="https://twitter.com/CribbsP"><img src="static/img/Twitter_Logo_White_On_Blue.jpg" alt="Twitter" style="width:20%;height:auto;border:2%">
@@ -20,7 +30,7 @@ header-includes:
   	<a href="https://cgatoxford.wordpress.com"><img src="static/img/wordpress-logo-32-blue.png" alt="Wordpress-cgat" style="width:20%;height:auto;border:2%">
   	</a>
   	</ul><br />
-  	
+
 <div class="aboutme">
 <div class="cv3-envaleur">
 <h2 style="text-align:center;font-family:Helvetica; font-color:black;"><span>Introduction</span></h2><br />
@@ -29,7 +39,7 @@ header-includes:
 
 <div class=intro>
 I lead a computational biology team with a broad interest in systems biology, immunology
-and epigenetics. 
+and epigenetics.
 
 My group is also heavily focused on developing novel multiplexed singlecell
 technology. Using this technology, our goal is to understand how cellular heterogeneity
