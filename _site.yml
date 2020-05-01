@@ -22,6 +22,9 @@ navbar:
   - text: 'Contact'
     desc: Contact
     href: contact.html
+  - text: 'Blog'
+    desc: Blog
+    href: https://acribbs.github.io/blog/
   - text: 'Code'
     menu:
     - text: 'siteymlgen'
