@@ -13,9 +13,6 @@ navbar:
   - text: 'Science'
     desc: Science
     href: science.html
-  - text: 'Lab News'
-    desc: Lan news
-    href: labnews.html
   - text: 'Publications'
     desc: Publications
     href: publications.html
