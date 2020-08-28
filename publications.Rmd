@@ -19,6 +19,18 @@ header-includes:
 
 # **2020**
 
+* **Epigenetic inactivation of oncogenic brachyury (TBXT) by H3K27 histone demethylase controls chordoma cell survival.** Lucia Cottone, Adam P Cribbs, Garima Khandelwal, Graham Wells, Lorena Ligammari, Martin Phillpott, Anthony Tumber, Patrick Lombard, Edward S Hookway, Tamas Szommer, Catrine Johansson, Paul E Brennan, Nischalan Pillay, Richard G Jenner, Udo Oppermann and Adrienne M. Flanagan. [Cancer Research](https://cancerres.aacrjournals.org/content/early/2020/08/27/0008-5472.CAN-20-1387)
+
+* **An ontogenetic switch drives the positive and negative selection of B cells.** Xu X., Deobagkar-Lele M., Bull KR., Crockford TL., Mead AJ., Cribbs AP., Sims D., Anzilotti C., Cornall RJ. [PNAS](https://www.pnas.org/content/117/7/3718)
+
+* **Genome-wide transcriptome analysis reveals equine embryonic stem cell-derived tenocytes resemble fetal, not adult tenocytes.** Y. Z. Paterson, A. Cribbs, M. Espenel, E. J. Smith, F. M. D. Henson and D. J. Guest. [Stem Cell Research & Therapy](https://stemcellres.biomedcentral.com/articles/10.1186/s13287-020-01692-w)
+
+* **Identifying collagen VI as a target of fibrotic diseases regulated by CREBBP/EP300.** Williams LM., McCann FE., Cabrita MA., Layton T., Cribbs AP., Knezevic B., Fang H., Knight J., Zhang M., Fischer R., Bonham S., Steenbeek LM., Yang N., Sood M., Bainbridge C., Warwick D., Harry L., Davidson D., Xie W., Sundstrӧm M., Feldmann M., Nanchahal J. [PNAS](https://www.pnas.org/content/117/34/20753)
+
+* **Novel biomarkers of a peripheral blood interferon signature associated with drug-naïve early arthritis patients distinguish persistent from self-limiting disease course.** Seyhan AA., Gregory B., Cribbs AP., Bhalara S., Li Y., Loreth C., Zhang Y., Guo Y., Lin L-L., Feldmann M., Williams LM., Brennan FM., Taylor PC. [Scientific reports](https://www.nature.com/articles/s41598-020-63757-3)
+
+* **Advances and challenges in epigenomic single-cell sequencing applications.** Philpott M., Cribbs AP., Brown T., Brown T., Oppermann U. [Cur Opin Chem Bio](https://www.sciencedirect.com/science/article/abs/pii/S1367593120300144?via%3Dihub)
+
 * **Histone H3K27me3 demethylases regulate human Th17 cell development and effector functions by impacting on metabolism.** Adam P Cribbs, Stefan Terlecki-Zaniewicz, Martin Philpott, Jeroen Baardman, David Ahern, Morten Lindow, Susanna Obad, Henrik Oerum, Brant Sampey, Palwinder K Mander, Henry Penn, Paul Wordsworth, Paul Bowness, Menno de Winther, Rab K Prinjha, Marc Feldmann and Udo Oppermann. [PNAS](https://pubmed.ncbi.nlm.nih.gov/32123118/)
 * **An ontogenetic switch drives the positive and negative selection of B cells.** Xijin Xu, Mukta Deobagkar-Lele, Katherine R Bull, Tanya L: Cockford, Adam J Mead, Adam P Cribbs, David Sims, Consuelo Anzilotti and Richard Cornall. [PNAS](https://pubmed.ncbi.nlm.nih.gov/32019891/)
 * **Mass cytometry analysis reveals a distinct immune environment in peritoneal fluid in endometriosis: a characterisation study.** Guo M, Bafligil C, Tapmeier T, Manek S, Shang C, Martinez F, Schmidt N, Obendorf M, Hess-Stumpp H, Zollner T, Kennedy S, Becker C, Zondervan K, Cribbs AP* and Oppermann U. [BMC Medicine](https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1470-y)
@@ -26,16 +38,21 @@ header-includes:
 # **2019**
 
 * **A Chemical Probe for Tudor Domain Protein Spindlin1 to Investigate Chromatin Function.** Vincent Fagan, Catrine Johansson, Carina Gileadi, Octovia Monteiro, James E Dunford, Reshma Nibhani, Martin Philpott, Jessica Malzahn, Graham Wells, Ruth Faram, Adam P C ribbs, Nadia Halidi, Fengling Li, Irene Chau, Holger Greschnik, Sirkannathasan Velupillai, Adellah Allali-Hassani, James Bennett, Thomas Christott, Charline Giroud, Andrew Lewis, Kilian V M Huber, Nick Athanasou, Chas Bountra, Manfred Jung, Roland Schule, Masoud Vedadi, Cheryl Arrowsmith, Yan Xiong, Jian Jin, Oleg Fedorov, Gillian Farnie, Paul E Brennan and Udo Oppermann. [J Med Chem](https://pubmed.ncbi.nlm.nih.gov/31550156/)
+
 * **Maternal circulating syncytiotrophoblast-derived extracellular vesicles contain biologically active 5’-tRNA halves** William R Cooke, Adam P Cribbs, Wei Zhang, Neva Kandzija, Carolina Motta-Mejia, Eszter Dombi, Rannya Ria Ana, Sofia Cerdeira, Christopher Redman and Manu Vatish. [Biochem Biophys Res Commun](https://pubmed.ncbi.nlm.nih.gov/31405560/)
+
 * **CGAT-core, a python framework for building scalable, reproducible computational biology workflows.** Adam P. Cribbs, Sebastian Luna-Valero, Charlotte George, Ian M. Sudbery,
 Antonio J. Berlanga-Taylor, Stephen N. Sansom, Tom Smith, Nicholas E. Ilott, Jethro Johnson, Jakub Scaber, Katherine Brown, David Sims, Andreas Heger. [F1000 Research](https://f1000research.com/articles/8-377)
+
 * **Bromodomain inhibition of the coactivators CBP/EP300 facilitates cellular reprogramming.** Ayyub Ebrahimi, Kenan Sevin , Glben Grhan Sevin , Adam Cribbs , Martin Philpott , Frat Uyulur , Tunc Morova , James Dunford , Sencer Gklemez , _uleAr , Udo Oppermann. [Nature Chemical Biology](https://www.nature.com/articles/s41589-019-0264-z)
+
 * **Human immunodeficiency reveals the Zn2+-dependence of B cell development** Consuelo Anzilotti , David Swan , Bertrand Boisson , Mukta Deobagkar-Lele , Pauline Chabosseau , Karin Engelhardt , Xijin Xu , Katherine Bull , Eleanor Cawthorne , Adam Cribbs , Ms. Tanya Crockford , Tarana Dang , Amy Fearn , Emma Fenech , Sarah de Jong , Dr. Cindy Ma , David Sims , Yaobo Xu , Andrew Cant, Gary Kleiner , T Leahy , M de la Morena , Jennifer Puck , Ralph Shapiro , Mirjam van der Burg , John Christianson , Benjamin Davies , John McGrath , Stefan Przyborski , Guy Rutter , Mauro Santibanez Koref, Prof. Stuart Tangye , Andreas Werner , Jean-Laurent Casanova , Richard Cornall , Mary Ellen Conley. [Nature Immunology](https://www.nature.com/articles/s41590-018-0295-8?proof=trueMay%252F)
 
 # **2018**
 
 * **Design and characterisation of covalent inhibitors of KDM5.** Saleta Vazquez-Rodriguez; Miranda Wright; Catherine M. Rogers; Adam Cribbs; Srikannathasan Velupillai; Martin Philpott; Henry Lee; James E Dunford; Kilian V. M. Huber; Mathew B. Robers; James D. Vasta; Marie Laetitia Thezenas; Sarah Bonham; Benedikt Kessler; James Bennett; Oleg
 Fedorov; Florence Raynaud; Adam Donovan; Julian Blagg; Vassilios Bavetsias; Udo Oppermann; Akane Kawamura; Paul Brennan. [Angewandte Chemie](https://pubmed.ncbi.nlm.nih.gov/30431220/)
+
 * **Invasive Nontyphoidal salmonella exploits divergent immune evasion strategies in infected and bystander dendritic cells** Anna Aulicino, Kevin Rue-Albrecht, Lorena Preciado-Llanes, Giorgio Napolitani, Neil Ashley, Tim Ambrose, Adam Cribbs, Melita Gordon, David Sims, Alison Simmons. [Nature communications](https://www.nature.com/articles/s41467-018-07329-0)
 
 # **2017**
@@ -50,12 +67,15 @@ Fedorov; Florence Raynaud; Adam Donovan; Julian Blagg; Vassilios Bavetsias; Udo 
 
 * **The role of kynuernine pathway in inflammatory disease.** Adam P cribbs and Richard Williams. [Spinger](https://www.kennedy.ox.ac.uk/publications/597740)
 * **Indoleamine 2,3-dioxygenase-1 is protective in atherosclerosis and its metabolites provide new opportunities for drug development** Jennifer E Cole, Nagore Astola, Adam P Cribbs, Micheal E Goddard, Inhye Park, Patricia Green, Alun H Davies, Richard O Williams, Marc Feldmann and Claudia Monaco. [PNAS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4620898/)
+
 * **Understanding the role of DNA methylation in rheumatoid arthritis - therapeutic and diagnostic implications** Adam P cribbs, Marc Feldmann and Udo Oppermann. [Therapeutic advances in musculoskeletal diseases](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4572365/)
+
 * **Methotrexate restores regulatory T cell function through demethylation of the foxp3 upstream enhancer in patients with rheumatoid arthritis.** Adam P Cribbs, Alan Kennedy, Henry Penn, Parisa Amjadi, Patricia Green, Khaja Syed, Bernard Gregory Fionula M. Brennan and Richard O. Williams. [Arthritis & Rheumatism](https://pubmed.ncbi.nlm.nih.gov/25604080/)
 
 # **2014**
 
 * **Hypomethylation of an upstream enhancer in the Foxp3 locus correlates with elevated gene expression in human regulatory T cells** Alan Kennedy, Emily M. Schmidt, Adam P. Cribbs, Henry Penn, Parisa Amjadi, Khaja Syed, Jordan E. Read, Patricia Green, Bernard Gregory and Fionula M. Brennan. [European Journal of Immunology](https://onlinelibrary.wiley.com/doi/full/10.1002/eji.201444453)
+
 * **Defective regulatory T cells in rheumatoid arthritis fail to activate IDO due to methylation of an NFAT binding site within the CTLA-4 promoter** Adam P Cribbs, Alan Kennedy, Jordan E. Read, Parisa Amjadi, Patricia Green, Henry Penn, Khaja Syed, Szymon W. Manka, Bernard Gregory Fionula M. Brennan and Richard O. Williams. [Arthritis & Rheumatology](https://pubmed.ncbi.nlm.nih.gov/24891289/). Research highlight in [Nature Reviews Rheumatology](https://www.nature.com/articles/nrrheum.2014.96?proof=true)
 
 # **2013**
