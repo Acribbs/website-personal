@@ -25,6 +25,8 @@ header-includes:
 
 * **Genome-wide transcriptome analysis reveals equine embryonic stem cell-derived tenocytes resemble fetal, not adult tenocytes.** Y. Z. Paterson, A. Cribbs, M. Espenel, E. J. Smith, F. M. D. Henson and D. J. Guest. [Stem Cell Research & Therapy](https://stemcellres.biomedcentral.com/articles/10.1186/s13287-020-01692-w)
 
+* **The transcription factor scleraxis differentially regulates gene expression in tenocytes isolated at different developmental stages** Y.Z.Paterson, N.Evans, S.Kan, A.Cribbs, F.M.D.Henson, D.J.Guest. [Mechanisms of Development](https://www.sciencedirect.com/science/article/pii/S092547732030040X)
+
 * **Identifying collagen VI as a target of fibrotic diseases regulated by CREBBP/EP300.** Williams LM., McCann FE., Cabrita MA., Layton T., Cribbs AP., Knezevic B., Fang H., Knight J., Zhang M., Fischer R., Bonham S., Steenbeek LM., Yang N., Sood M., Bainbridge C., Warwick D., Harry L., Davidson D., Xie W., Sundstrӧm M., Feldmann M., Nanchahal J. [PNAS](https://www.pnas.org/content/117/34/20753)
 
 * **Novel biomarkers of a peripheral blood interferon signature associated with drug-naïve early arthritis patients distinguish persistent from self-limiting disease course.** Seyhan AA., Gregory B., Cribbs AP., Bhalara S., Li Y., Loreth C., Zhang Y., Guo Y., Lin L-L., Feldmann M., Williams LM., Brennan FM., Taylor PC. [Scientific reports](https://www.nature.com/articles/s41598-020-63757-3)
