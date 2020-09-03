@@ -1,5 +1,4 @@
 ---
-title: "Publications"
 pandoc_args: [ 
       "--number-offset", "1,0" 
     ]
