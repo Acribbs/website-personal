@@ -14,7 +14,6 @@ header-includes:
 
 <h2 style="text-align:center;font-family:Helvetica; font-color:black;"><span>Current projects in the Cribbs group</span></h2><br />
 
-
 <div id="project-3">
 
 <div class="project-left">
