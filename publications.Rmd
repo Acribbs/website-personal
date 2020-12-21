@@ -18,6 +18,8 @@ header-includes:
 
 # **2020**
 
+* **Hypoxia Induces Transcriptional and Translational Downregulation of the Type I IFN Pathway in Multiple Cancer Cell Types.** Ana Miar, Esther Arnaiz, Esther Bridges, Shaunna Beedie, Adam P. Cribbs, Damien J. Downes, Robert A. Beagrie, Jan Rehwinkel and Adrian L. Harris. [Cancer Research](https://cancerres.aacrjournals.org/content/80/23/5245)
+
 * **Epigenetic inactivation of oncogenic brachyury (TBXT) by H3K27 histone demethylase controls chordoma cell survival.** Lucia Cottone, Adam P Cribbs, Garima Khandelwal, Graham Wells, Lorena Ligammari, Martin Phillpott, Anthony Tumber, Patrick Lombard, Edward S Hookway, Tamas Szommer, Catrine Johansson, Paul E Brennan, Nischalan Pillay, Richard G Jenner, Udo Oppermann and Adrienne M. Flanagan. [Cancer Research](https://cancerres.aacrjournals.org/content/early/2020/08/27/0008-5472.CAN-20-1387)
 
 * **An ontogenetic switch drives the positive and negative selection of B cells.** Xu X., Deobagkar-Lele M., Bull KR., Crockford TL., Mead AJ., Cribbs AP., Sims D., Anzilotti C., Cornall RJ. [PNAS](https://www.pnas.org/content/117/7/3718)
