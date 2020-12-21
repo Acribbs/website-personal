@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>publications.utf8</title>
+
+<script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Adam P Cribbs</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="science.html">Science</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+<li>
+  <a href="https://acribbs.github.io/blog/">Blog</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Code
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://acribbs.github.io/siteymlgen/index.html">
+        <span class="fa fa-archive"></span>
+         
+        siteymlgen
+      </a>
+    </li>
+    <li>
+      <a href="http://single-cell.readthedocs.io">
+        <span class="fa fa-archive"></span>
+         
+        scflow
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Acribbs/tRNAnalysis">
+        <span class="fa fa-archive"></span>
+         
+        tRNAnalysis
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/cgat-developers">
+        <span class="fa fa-archive"></span>
+         
+        cgat-developers
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Acribbs/deseq2_report">
+        <span class="fa fa-archive"></span>
+         
+        Deseq2 report
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:adam.cribbs@dnorms.ox.ac.uk">
+    <span class="fa fa-envelope-o"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/Acribbs">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/CribbsP">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.ndorms.ox.ac.uk/team/adam-cribbs">
+    <span class="fa fa-globe-europe"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link href="static/css/bootstrap.css" rel="stylesheet" media="screen"> <link href="static/css/bootstrap-responsive.min.css" rel="stylesheet"> <link href="static/css/bootstrap-social.css" rel="stylesheet"> <link href="static/css/font-awesome.css" rel="stylesheet" > <link href="static/css/custom.css" rel="stylesheet" ></p>
+<h2 style="text-align:center;font-family:Helvetica; font-color:black;">
+<span>Publications</span>
+</h2>
+<p><br /></p>
+<div id="section" class="section level1">
+<h1><strong>2020</strong></h1>
+<ul>
+<li><p><strong>Hypoxia Induces Transcriptional and Translational Downregulation of the Type I IFN Pathway in Multiple Cancer Cell Types.</strong> Ana Miar, Esther Arnaiz, Esther Bridges, Shaunna Beedie, Adam P. Cribbs, Damien J. Downes, Robert A. Beagrie, Jan Rehwinkel and Adrian L. Harris. <a href="https://cancerres.aacrjournals.org/content/80/23/5245">Cancer Research</a></p></li>
+<li><p><strong>Epigenetic inactivation of oncogenic brachyury (TBXT) by H3K27 histone demethylase controls chordoma cell survival.</strong> Lucia Cottone, Adam P Cribbs, Garima Khandelwal, Graham Wells, Lorena Ligammari, Martin Phillpott, Anthony Tumber, Patrick Lombard, Edward S Hookway, Tamas Szommer, Catrine Johansson, Paul E Brennan, Nischalan Pillay, Richard G Jenner, Udo Oppermann and Adrienne M. Flanagan. <a href="https://cancerres.aacrjournals.org/content/early/2020/08/27/0008-5472.CAN-20-1387">Cancer Research</a></p></li>
+<li><p><strong>An ontogenetic switch drives the positive and negative selection of B cells.</strong> Xu X., Deobagkar-Lele M., Bull KR., Crockford TL., Mead AJ., Cribbs AP., Sims D., Anzilotti C., Cornall RJ. <a href="https://www.pnas.org/content/117/7/3718">PNAS</a></p></li>
+<li><p><strong>Genome-wide transcriptome analysis reveals equine embryonic stem cell-derived tenocytes resemble fetal, not adult tenocytes.</strong> Y. Z. Paterson, A. Cribbs, M. Espenel, E. J. Smith, F. M. D. Henson and D. J. Guest. <a href="https://stemcellres.biomedcentral.com/articles/10.1186/s13287-020-01692-w">Stem Cell Research &amp; Therapy</a></p></li>
+<li><p><strong>The transcription factor scleraxis differentially regulates gene expression in tenocytes isolated at different developmental stages</strong> Y.Z.Paterson, N.Evans, S.Kan, A.Cribbs, F.M.D.Henson, D.J.Guest. <a href="https://www.sciencedirect.com/science/article/pii/S092547732030040X">Mechanisms of Development</a></p></li>
+<li><p><strong>Identifying collagen VI as a target of fibrotic diseases regulated by CREBBP/EP300.</strong> Williams LM., McCann FE., Cabrita MA., Layton T., Cribbs AP., Knezevic B., Fang H., Knight J., Zhang M., Fischer R., Bonham S., Steenbeek LM., Yang N., Sood M., Bainbridge C., Warwick D., Harry L., Davidson D., Xie W., Sundstrӧm M., Feldmann M., Nanchahal J. <a href="https://www.pnas.org/content/117/34/20753">PNAS</a></p></li>
+<li><p><strong>Novel biomarkers of a peripheral blood interferon signature associated with drug-naïve early arthritis patients distinguish persistent from self-limiting disease course.</strong> Seyhan AA., Gregory B., Cribbs AP., Bhalara S., Li Y., Loreth C., Zhang Y., Guo Y., Lin L-L., Feldmann M., Williams LM., Brennan FM., Taylor PC. <a href="https://www.nature.com/articles/s41598-020-63757-3">Scientific reports</a></p></li>
+<li><p><strong>Advances and challenges in epigenomic single-cell sequencing applications.</strong> Philpott M., Cribbs AP., Brown T., Brown T., Oppermann U. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1367593120300144?via%3Dihub">Cur Opin Chem Bio</a></p></li>
+<li><p><strong>Histone H3K27me3 demethylases regulate human Th17 cell development and effector functions by impacting on metabolism.</strong> Adam P Cribbs, Stefan Terlecki-Zaniewicz, Martin Philpott, Jeroen Baardman, David Ahern, Morten Lindow, Susanna Obad, Henrik Oerum, Brant Sampey, Palwinder K Mander, Henry Penn, Paul Wordsworth, Paul Bowness, Menno de Winther, Rab K Prinjha, Marc Feldmann and Udo Oppermann. <a href="https://pubmed.ncbi.nlm.nih.gov/32123118/">PNAS</a></p></li>
+<li><p><strong>An ontogenetic switch drives the positive and negative selection of B cells.</strong> Xijin Xu, Mukta Deobagkar-Lele, Katherine R Bull, Tanya L: Cockford, Adam J Mead, Adam P Cribbs, David Sims, Consuelo Anzilotti and Richard Cornall. <a href="https://pubmed.ncbi.nlm.nih.gov/32019891/">PNAS</a></p></li>
+<li><p><strong>Mass cytometry analysis reveals a distinct immune environment in peritoneal fluid in endometriosis: a characterisation study.</strong> Guo M, Bafligil C, Tapmeier T, Manek S, Shang C, Martinez F, Schmidt N, Obendorf M, Hess-Stumpp H, Zollner T, Kennedy S, Becker C, Zondervan K, Cribbs AP* and Oppermann U. <a href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-019-1470-y">BMC Medicine</a></p></li>
+</ul>
+</div>
+<div id="section-1" class="section level1">
+<h1><strong>2019</strong></h1>
+<ul>
+<li><p><strong>A Chemical Probe for Tudor Domain Protein Spindlin1 to Investigate Chromatin Function.</strong> Vincent Fagan, Catrine Johansson, Carina Gileadi, Octovia Monteiro, James E Dunford, Reshma Nibhani, Martin Philpott, Jessica Malzahn, Graham Wells, Ruth Faram, Adam P C ribbs, Nadia Halidi, Fengling Li, Irene Chau, Holger Greschnik, Sirkannathasan Velupillai, Adellah Allali-Hassani, James Bennett, Thomas Christott, Charline Giroud, Andrew Lewis, Kilian V M Huber, Nick Athanasou, Chas Bountra, Manfred Jung, Roland Schule, Masoud Vedadi, Cheryl Arrowsmith, Yan Xiong, Jian Jin, Oleg Fedorov, Gillian Farnie, Paul E Brennan and Udo Oppermann. <a href="https://pubmed.ncbi.nlm.nih.gov/31550156/">J Med Chem</a></p></li>
+<li><p><strong>Maternal circulating syncytiotrophoblast-derived extracellular vesicles contain biologically active 5’-tRNA halves</strong> William R Cooke, Adam P Cribbs, Wei Zhang, Neva Kandzija, Carolina Motta-Mejia, Eszter Dombi, Rannya Ria Ana, Sofia Cerdeira, Christopher Redman and Manu Vatish. <a href="https://pubmed.ncbi.nlm.nih.gov/31405560/">Biochem Biophys Res Commun</a></p></li>
+<li><p><strong>CGAT-core, a python framework for building scalable, reproducible computational biology workflows.</strong> Adam P. Cribbs, Sebastian Luna-Valero, Charlotte George, Ian M. Sudbery, Antonio J. Berlanga-Taylor, Stephen N. Sansom, Tom Smith, Nicholas E. Ilott, Jethro Johnson, Jakub Scaber, Katherine Brown, David Sims, Andreas Heger. <a href="https://f1000research.com/articles/8-377">F1000 Research</a></p></li>
+<li><p><strong>Bromodomain inhibition of the coactivators CBP/EP300 facilitates cellular reprogramming.</strong> Ayyub Ebrahimi, Kenan Sevin , Glben Grhan Sevin , Adam Cribbs , Martin Philpott , Frat Uyulur , Tunc Morova , James Dunford , Sencer Gklemez , _uleAr , Udo Oppermann. <a href="https://www.nature.com/articles/s41589-019-0264-z">Nature Chemical Biology</a></p></li>
+<li><p><strong>Human immunodeficiency reveals the Zn2+-dependence of B cell development</strong> Consuelo Anzilotti , David Swan , Bertrand Boisson , Mukta Deobagkar-Lele , Pauline Chabosseau , Karin Engelhardt , Xijin Xu , Katherine Bull , Eleanor Cawthorne , Adam Cribbs , Ms. Tanya Crockford , Tarana Dang , Amy Fearn , Emma Fenech , Sarah de Jong , Dr. Cindy Ma , David Sims , Yaobo Xu , Andrew Cant, Gary Kleiner , T Leahy , M de la Morena , Jennifer Puck , Ralph Shapiro , Mirjam van der Burg , John Christianson , Benjamin Davies , John McGrath , Stefan Przyborski , Guy Rutter , Mauro Santibanez Koref, Prof. Stuart Tangye , Andreas Werner , Jean-Laurent Casanova , Richard Cornall , Mary Ellen Conley. <a href="https://www.nature.com/articles/s41590-018-0295-8?proof=trueMay%252F">Nature Immunology</a></p></li>
+</ul>
+</div>
+<div id="section-2" class="section level1">
+<h1><strong>2018</strong></h1>
+<ul>
+<li><p><strong>Design and characterisation of covalent inhibitors of KDM5.</strong> Saleta Vazquez-Rodriguez; Miranda Wright; Catherine M. Rogers; Adam Cribbs; Srikannathasan Velupillai; Martin Philpott; Henry Lee; James E Dunford; Kilian V. M. Huber; Mathew B. Robers; James D. Vasta; Marie Laetitia Thezenas; Sarah Bonham; Benedikt Kessler; James Bennett; Oleg Fedorov; Florence Raynaud; Adam Donovan; Julian Blagg; Vassilios Bavetsias; Udo Oppermann; Akane Kawamura; Paul Brennan. <a href="https://pubmed.ncbi.nlm.nih.gov/30431220/">Angewandte Chemie</a></p></li>
+<li><p><strong>Invasive Nontyphoidal salmonella exploits divergent immune evasion strategies in infected and bystander dendritic cells</strong> Anna Aulicino, Kevin Rue-Albrecht, Lorena Preciado-Llanes, Giorgio Napolitani, Neil Ashley, Tim Ambrose, Adam Cribbs, Melita Gordon, David Sims, Alison Simmons. <a href="https://www.nature.com/articles/s41467-018-07329-0">Nature communications</a></p></li>
+</ul>
+</div>
+<div id="section-3" class="section level1">
+<h1><strong>2017</strong></h1>
+<ul>
+<li><strong>Ethical considerations regarding genome editing and its inheritance</strong> Adam P Cribbs and Sumeth Perera. <a href="https://pubmed.ncbi.nlm.nih.gov/29259526/">Yale J Biol Med</a></li>
+</ul>
+</div>
+<div id="section-4" class="section level1">
+<h1><strong>2016</strong></h1>
+<ul>
+<li><strong>Production and concentration of lentivirus for transduction of primary T cells</strong> Alan Kennedy and Adam P Cribbs. Lentiviral vectors and exosomes as gene and protein delivery tools. <a href="https://pubmed.ncbi.nlm.nih.gov/27317175/">Spinger</a></li>
+</ul>
+</div>
+<div id="section-5" class="section level1">
+<h1><strong>2015</strong></h1>
+<ul>
+<li><p><strong>The role of kynuernine pathway in inflammatory disease.</strong> Adam P cribbs and Richard Williams. <a href="https://www.kennedy.ox.ac.uk/publications/597740">Spinger</a></p></li>
+<li><p><strong>Indoleamine 2,3-dioxygenase-1 is protective in atherosclerosis and its metabolites provide new opportunities for drug development</strong> Jennifer E Cole, Nagore Astola, Adam P Cribbs, Micheal E Goddard, Inhye Park, Patricia Green, Alun H Davies, Richard O Williams, Marc Feldmann and Claudia Monaco. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4620898/">PNAS</a></p></li>
+<li><p><strong>Understanding the role of DNA methylation in rheumatoid arthritis - therapeutic and diagnostic implications</strong> Adam P cribbs, Marc Feldmann and Udo Oppermann. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4572365/">Therapeutic advances in musculoskeletal diseases</a></p></li>
+<li><p><strong>Methotrexate restores regulatory T cell function through demethylation of the foxp3 upstream enhancer in patients with rheumatoid arthritis.</strong> Adam P Cribbs, Alan Kennedy, Henry Penn, Parisa Amjadi, Patricia Green, Khaja Syed, Bernard Gregory Fionula M. Brennan and Richard O. Williams. <a href="https://pubmed.ncbi.nlm.nih.gov/25604080/">Arthritis &amp; Rheumatism</a></p></li>
+</ul>
+</div>
+<div id="section-6" class="section level1">
+<h1><strong>2014</strong></h1>
+<ul>
+<li><p><strong>Hypomethylation of an upstream enhancer in the Foxp3 locus correlates with elevated gene expression in human regulatory T cells</strong> Alan Kennedy, Emily M. Schmidt, Adam P. Cribbs, Henry Penn, Parisa Amjadi, Khaja Syed, Jordan E. Read, Patricia Green, Bernard Gregory and Fionula M. Brennan. <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/eji.201444453">European Journal of Immunology</a></p></li>
+<li><p><strong>Defective regulatory T cells in rheumatoid arthritis fail to activate IDO due to methylation of an NFAT binding site within the CTLA-4 promoter</strong> Adam P Cribbs, Alan Kennedy, Jordan E. Read, Parisa Amjadi, Patricia Green, Henry Penn, Khaja Syed, Szymon W. Manka, Bernard Gregory Fionula M. Brennan and Richard O. Williams. <a href="https://pubmed.ncbi.nlm.nih.gov/24891289/">Arthritis &amp; Rheumatology</a>. Research highlight in <a href="https://www.nature.com/articles/nrrheum.2014.96?proof=true">Nature Reviews Rheumatology</a></p></li>
+</ul>
+</div>
+<div id="section-7" class="section level1">
+<h1><strong>2013</strong></h1>
+<ul>
+<li><strong>Simplified production and concentration of lentiviral vectors to achieve high transduction in primary human T cells.</strong> Adam P Cribbs, Alan Kennedy, Bernard Gregory and Fionula M Brennan. <a href="https://bmcbiotechnol.biomedcentral.com/articles/10.1186/1472-6750-13-98">BMC Biotechnology</a></li>
+</ul>
+</div>
+<div id="section-8" class="section level1">
+<h1><strong>2011</strong></h1>
+<ul>
+<li><strong>Resistance to regulatory T cell-mediated suppression in rheumatoid arthritis can be bypassed by ectopic foxp3 expression in pathogenic synovial cells.</strong> Paul A Beavis, Bernard Gregory, Patricia Green, Adam P Cribbs, Alan Kennedy, Parisa Amjadi, Andrew C Palfreeman, Marc Feldmann and Fionula Brennan. <a href="https://www.pnas.org/content/108/40/16717">PNAS</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
