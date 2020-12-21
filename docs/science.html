@@ -13,7 +13,7 @@
 
 <title>science.utf8</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
@@ -23,8 +23,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -376,7 +387,42 @@ $(document).ready(function () {
 
 
 <p><link href="static/css/bootstrap.css" rel="stylesheet" media="screen"> <link href="static/css/bootstrap-responsive.min.css" rel="stylesheet"> <link href="static/css/bootstrap-social.css" rel="stylesheet"> <link href="static/css/font-awesome.css" rel="stylesheet" > <link href="static/css/custom.css" rel="stylesheet" ></p>
-<p><img src="static/img/science.png" /></p>
+<h2 style="text-align:center;font-family:Helvetica; font-color:black;">
+<span>Current projects in the Cribbs group</span>
+</h2>
+<p><br /></p>
+<div id="project-3">
+<div class="project-left">
+<p><img src="static/img/UKRI_MR_Council-Logo.png" style="width:70%;height:70%;border-radius: 5px"></p>
+</div>
+<div class="project-right">
+<h2>
+Identifying drug targets for the treatment of multiple myeloma
+</h2>
+<p>
+Multiple Myeloma (MM) is a bone marrow cancer that affects over 5,700 new patients a year in the UK. Current response rates to treatment are varied and there is a mean survival age of only 4-5 years, with a 10-year survival rate of only ~3%. A significant proportion of treatment failure is due to the emergence of multi-drug resistance.
+</p>
+<p>
+In 2020 I was awarded an MRC Career Development Fellowship to apply multi-modal single-cell sequencing tools to understand the aetiology of MM and drug resistance. Ultimately, the main goal of my research is to better understand MM disease biology so we can develop new medicines to treat this incurable disease.
+</p>
+</div>
+</div>
+<div id="project-3">
+<div class="project-left">
+<p><img src="static/img/Innovate.png" style="width:70%;height:70%;border-radius: 5px"></p>
+</div>
+<div class="project-right">
+<h2>
+Development of single-cell sequencing methods
+</h2>
+<p>
+The advent of single-cell technologies has led to a better understanding of the complexity and diversity of the tissue microenvironment.However, these approaches only allow for the measurement of the distal parts of a transcript following short-read sequencing. Therefore, splicing and sequence diversity information is lost for the majority of the transcript. The application of long-read Nanopore sequencing to droplet-based methods is challenging because of the low base-calling accuracy currently associated with Nanopore sequencing.
+</p>
+<p>
+While long-read sequencing offers many advantages over short-read sequencing, it also suffers from a much higher error rate (3-10%). Since single-cell sequencing relies on precise calling of cell barcodes, long-read sequencing is currently impractical for single-cell sequencing. This project will develop methodology to construct oligonucleotide barcodes with novel amidites (the building blocks for synthetic oligonucleotides) that provide inherent error detection and/or correction.
+</p>
+</div>
+</div>
 <div id="project-3">
 <div class="project-left">
 <p><img src="static/img/CZI.png" style="width:70%;height:70%;border-radius: 5px"></p>
@@ -385,11 +431,8 @@ $(document).ready(function () {
 <h2>
 The Tendon Seed Network
 </h2>
-<h3>
-Human Cell Atlas
-</h3>
 <h4>
-The Botnar Research Centre, University of Glasgow, University of Copenhagen and University of Zurich
+Human Cell Atlas
 </h4>
 <p>
 <a href="https://chanzuckerberg.com/science/programs-resources/humancellatlas/seednetworks/the-tendon-seed-network/">The Tendon Seed Network</a> will spatially define the transcriptome of extracellular matrix-rich tissues such as tendon across multiple anatomic and micro-anatomic sites. To enable this, the project will develop clinical, laboratory, bioinformatics, and mathematical modelling tools and platforms.
@@ -398,20 +441,17 @@ The Botnar Research Centre, University of Glasgow, University of Copenhagen and 
 </div>
 <div id="project-3">
 <div class="project-left">
-<p><img src="static/img/maxresdefault.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
+<p><img src="static/img/logo_uk_0.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
 </div>
 <div class="project-right">
 <h2>
-Hypoxia and brest cancer
+Understanding the epigenetic mechanisms of chemotherapy resistance in medulloblastoma
 </h2>
-<h3>
-Prof Adrian Harris
-</h3>
 <h4>
-Weatherall Institute of Molecular Medicine, University of Oxford
+In Collaboration with Dr. Tuğba Bağcı Önder
 </h4>
 <p>
-I am leading the computational analysis of single-cell data to identify breast cancer responses to hypoxia.
+Supported by a Royal Society Advanced Newton award to identify epigenetic drug targets for the reversal of chemotherapy resistance in medulloblastoma.
 </p>
 </div>
 </div>
@@ -423,204 +463,12 @@ I am leading the computational analysis of single-cell data to identify breast c
 <h2>
 Research Alliance on Women’s Health
 </h2>
-<h3>
-Oxford Bayer Healthcare Collaborative
-</h3>
 <h4>
-Weatherall Institute of Molecular Medicine, University of Oxford
+Oxford Bayer Healthcare Collaborative
 </h4>
 <p>
 Leading the integration of multi-omic data to identify drug targets for uterine fibroids and PCOS.
 </p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/medulloblastoma.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
-</div>
-<div class="project-right">
-<h2>
-Understanding the epigenetic mechanisms of chemotherapy resistance in medulloblastoma
-</h2>
-<h3>
-Dr. Tuğba Bağcı Önder
-</h3>
-<h4>
-Koç University School of Medicine, Turkey
-</h4>
-<p>
-Recently, Tugba and I were awarded a Royal Society Advanced Newton award to identify epigenetic drug targets for the reversal of chemotherapy resistance in medulloblastoma.
-</p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/F2large.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
-</div>
-<div class="project-right">
-<h2>
-Multi-omic approach to identify new biomarkers in preeclampsia patients
-</h2>
-<h3>
-Dr Manu Vatish
-</h3>
-<h4>
-Nuffield Department of Obstetrics and Gynaecology, University of Oxford
-</h4>
-<p>
-I am working in collaboration with Prof Ian Sargent and Dr Manu Vatish at the University of Oxford (Gynaecology). We are using proteomics and transcriptomics to identify biomarkers that could be useful in the diagnostic of preeclampsia. Our focus is directed towards investigating the role of extracellular vesicles, which are secreted in large volumes during preeclampsia. Extracellular vesicles persist in the plasma of patients for extended periods, which makes them an attractive biomarker. The data have revealed a number of proteins, mRNA and miRNA species that are differentially expressed between the placenta tissue and placental derived extracellular vesicles in normal and preeclampsia patients. The next phase of the project is to validate these potential biomarkers in a large number of patients. I plan to employ machine-learning approaches to develop a diagnostic tool for accurately assessing patient disease development, ultimately leading to better treatment outcomes.
-</p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/AS.jpeg" style="width:70%;height:70%;border-radius: 5px"></p>
-</div>
-<div class="project-right">
-<h2>
-Epigenetics of CD4 T cells in ankylosing spondylitis
-</h2>
-<h3>
-Dr Liye Chen and Prof Paul Bowness
-</h3>
-<h4>
-Botnar Research Centre, University of Oxford
-</h4>
-<p>
-In this collaboration I am leading the computational analysis of a number of projects focused on the epigenetics of T cells in the autoimmune disease AS.
-</p>
-</div>
-</div>
-<br /><br />
-<div class="cv3-envaleur">
-<h2 style="text-align:center;font-family:Helvetica; font-color:black;font-size: 35px;">
-<span>Past projects</span>
-</h2>
-<p><br /></p>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/metabolism.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
-</div>
-<div class="project-right">
-<h2>
-Metabolism of T helper cells
-</h2>
-<h3>
-Prof Udo Oppermann and Prof Marc Feldmann
-</h3>
-<h4>
-Botnar Research Centre, University of Oxford
-</h4>
-<p>
-In this project I have been investigating how inhibiting specific epigenetic pathways can lead to altered metabolic programming.
-</p>
-<p>
-This work was published as <a href="https://www.pnas.org/content/117/11/6056">Histone H3K27me3 demethylases regulate human Th17 cell development and effector functions by impacting on metabolism</a>
-</p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/NKcells.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
-</div>
-<div class="project-right">
-<h2>
-Understanding the epigenetic pathways involved in Natural killer cell activation
-</h2>
-<h3>
-Prof Udo Oppermann and Prof Sir Marc Feldmann
-</h3>
-<h4>
-Botnar Research Centre, University of Oxford
-</h4>
-<p>
-In this project I undertook the wet-lab and computational work that led to identification of a number of epigenetic pathways that control inflammatory function. This project was initiated during my postdoctoral work in the Oppermann and Feldmann laboratories.
-</p>
-<p>
-This work was published as <a href="https://www.ncbi.nlm.nih.gov/pubmed/29301935">Inhibition of histone H3K27 demethylases selectively modulates inflammatory phenotypes of natural killer cells.</a>
-</p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/nri1713-f2.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
-</div>
-<div class="project-right">
-<h2>
-B cell development in autoimmunity
-</h2>
-<h3>
-Prof Richard Cornall and Dr Consuelo Anzilotti
-</h3>
-<h4>
-WIMM, University of Oxford
-</h4>
-<p>
-I led the computational analysis of the transcriptome data of a novel B cell development autoimmune disease.
-</p>
-<p>
-This work was published as <a href="https://www.imm.ox.ac.uk/publications/950562">An essential role for the Zn2+ transporter ZIP7 in B cell development </a>
-</p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/Dupuytren.jpg" style="width:60%;height:60%;"></p>
-</div>
-<div class="project-right">
-<h2>
-Investigating BET bromodomains in Dupytren’s disease
-</h2>
-<h3>
-Dr Fiona McCann and Dr Lynn Williams
-</h3>
-<h4>
-Kennedy Institute of Rheumatology, University of oxford
-</h4>
-<p>
-I am working in collaboration with Dr Lynn Williams and Dr Fiona McCann at the Kennedy Institute of Rheumatology to analyse transcriptome data from patients with Dupytren’s disease.
-</p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/nri3384-f3.jpg" style="width:60%;height:60%;"></p>
-</div>
-<div class="project-right">
-<h2>
-Single cell analysis of gamma delta T cells within salmonella infected patients
-</h2>
-<h3>
-Prof Alison Simmons
-</h3>
-<h4>
-WIMM, University of Oxford
-</h4>
-<p>
-This project is a collaboration with Prof Alison Simmons, University of Oxford (WIMM), using single cell transcriptomic approaches to identify T cell heterogeneity following salmonella infection in healthy individuals. This project has allowed me to apply multiple statistical approaches to model T cell heterogeneity using a combination of both Frequentist and Bayesian statistical approaches.
-</p>
-</div>
-</div>
-<div id="project-3">
-<div class="project-left">
-<p><img src="static/img/1200x900f.jpg" style="width:70%;height:70%;border-radius: 5px"></p>
-</div>
-<div class="project-right">
-<h2>
-Designing CRISPR Cas gRNA across splice junctions in the human genome
-</h2>
-<h3>
-Dr Daniel Ebner and Dr Andrew Bassett
-</h3>
-<h4>
-Target Drug Discovery Institute, University of Oxford
-</h4>
-<p>
-This was the first coding project that I was involved with during my training at CGAT. I established a computational infrastructure and website to identify and rank the effectiveness of designing gRNAs to splice regions in proteins across the genome. Although successful, this project didn’t lead to a publication because a rival published before us, however it did allow me to develop my skills in SQL and website development.
-</p>
-</div>
-</div>
 </div>
 </div>
 
@@ -633,7 +481,7 @@ This was the first coding project that I was involved with during my training at
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

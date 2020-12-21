@@ -374,7 +374,7 @@ float: center;
 margin-left: 10%;
 }
 #project-3{
-width: 80%;
+width: 100%;
 overflow: auto;
 z-index: 0;
 float: center;
@@ -404,14 +404,14 @@ margin-left: 10%;
 }
 
 .project-left{
-width: 40%;
+width: 25%;
 z-index: 0;
 float: left;
 margin-top: 1em;
 }
 
 .project-right{
-width: 60%;
+width: 75%;
 z-index: 0;
 float: right;
 }
